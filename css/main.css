@@ -2,50 +2,105 @@ body, html {
     margin: 0;
     padding: 0;
 }
+body {
+  height: 10000px;
+
+}
+
+
+#logo {
+  padding: 0;
+  transition: 0.3s;
+  transition-property: all;
+}
+#logo-container {
+  transition-property: all;
+  transition: 0.3s;
+
+}
+
 
 .navbar {
     height: 30px;
-    width: 100%;
     margin: 0 0;
     padding: 0px 0px;
+    transition: 0.2s;
+
 }
 
 .nav-item {
     margin: 0px 0px;
 }
+
 .nav-button {
-    margin: 0 0;
+    margin: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid white;
+    border: none;
     color: black;
     background-color: rgb(200, 200, 200);
+    text-align: center;
+    position: relative;
 }
+
+.nav-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-button:hover {
+  cursor: pointer;
+}
+
 .nav-button:active {
     background-color: rgb(190, 190, 190);
 }
 
-@media only screen and (orientation: portrait){
+@media only screen and (max-width: 480px){
     .nav-item {
         width: 100%;
         display: inline-block;
-        height: 30px;
+        height: 50px;
     }
     .navbar {
         width: 100%;
         height: auto;
         align-content: center;
+        top: 150px;
+    }
+    #logo {
+      height: 150px;
+      width: auto;
+      display: inline-block;
+      transition: 0.3s;
+      transition-property: all;
+    }
+    #logo-container {
+      text-align: center;
+      transition: 0.3s;
+      transition-property: all;
     }
 }
-@media only screen and (orientation: landscape){
+@media only screen and (min-width: 481px){
+    #logo {
+      width: 150px;
+      height: auto;
+      transition: 0.3s;
+      float: left;
+      transition-property: all;
+    }
     .nav-item {
         width: 100%;
         display: inline;
         height: 30px;
+        float: right;
     }
     .navbar {
-        width: 100%;
-        height: 30px;
+        width: auto;
+        margin-left: 150px;
+        height: 50px;
         justify-content: space-around;
         align-content: center;
         display: flex;
