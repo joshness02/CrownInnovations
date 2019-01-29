@@ -85,8 +85,8 @@ body {
 }
 @media only screen and (orientation: landscape){
     #logo {
-      width: 150px;
-      height: auto;
+      width: auto;
+      height: 150px;
       transition: 0.3s;
       float: left;
       transition-property: all;
@@ -94,13 +94,13 @@ body {
     .nav-item {
         width: 100%;
         display: inline;
-        height: 150px;
+        height: 30px;
         float: right;
     }
     .navbar {
         width: auto;
-        margin-left: 150px;
-        height: 150px;
+        height: 100px;
+        float: right;
         justify-content: space-around;
         align-content: center;
         display: flex;
