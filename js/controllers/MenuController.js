@@ -9,5 +9,11 @@ app.controller("MenuController", ['$scope', function($scope){
         {
             title: 'Blog',
         },
+        {
+            title: 'Contact',
+        },
+        {
+            title: 'Products',
+        },
     ];
 }]);
