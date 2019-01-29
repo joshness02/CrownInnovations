@@ -12,8 +12,10 @@
             <div class="navbar">
                 <div class="dropdown" ng-controller="MenuController">
                     <a class="dropbtn">MENU</a>
-                    <div class="dropdown-content" ng-repeat="item in items">
-                        <menu-item info="item"></menu-item>
+                    <div class="dropdown-content">
+                        <div  ng-repeat="item in items">
+                            <menu-item info="item"></menu-item>
+                        </div>
                         <br>
                     </div>
                 </div>
