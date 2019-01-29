@@ -5,13 +5,16 @@
         <link href="css/main.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <div ng-app="MenuApp">
+        <div id="header" ng-app="MenuApp">
               <div id="logo-container">
-                <img id="logo" src="imgs/logo.png" alt="Logo">
+                <!--<img id="logo" src="imgs/logo.png" alt="Logo">-->
               </div>
             <div class="navbar" ng-controller="MenuController">
-                <div class="nav-item" ng-repeat="item in items">
-                    <menu-item info="item"></menu-item>
+                <div class="dropdown">
+                    <a class="dropbtn">MENU</a>
+                    <div class="dropdown-content" ng-repeat="item in items">
+                        <menu-item info="item"></menu-item>
+                    </div>
                 </div>
             </div>
 
