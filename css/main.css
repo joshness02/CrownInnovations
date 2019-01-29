@@ -131,6 +131,7 @@ body {
     background-color: red;
     min-width: 160px;
     z-index: 10;
+    height: auto;
 }
 
 .dropdown:hover .dropdown-content {
