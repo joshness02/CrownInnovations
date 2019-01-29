@@ -86,7 +86,7 @@ body {
 @media only screen and (orientation: landscape){
     #logo {
       width: auto;
-      height: 150px;
+      height: 50px;
       transition: 0.3s;
       float: left;
       transition-property: all;
