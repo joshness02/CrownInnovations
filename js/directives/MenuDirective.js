@@ -8,7 +8,3 @@ app.directive("menuItem", function(){
     };
 });
 
-var buttons = document.getElementsByClassName("nav-button");
-for(var i = 0; i < buttons.length; i+=1){
-    buttons[i].addEventListener("click", buttons[i].info);
-}
