@@ -8,16 +8,18 @@
         <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div ng-app="MenuApp">
-          <div id="logo-container">
-            <img id="logo" src="/imgs/logo.png" alt="Logo">
-          </div>
-            <div class="navbar" ng-controller="MenuController">
-                <div class="nav-item" ng-repeat="item in items">
-                    <menu-item info="item"></menu-item>
-                </div>
+          <div ng-app="MenuApp">
+            <div id="logo-container">
+              <img id="logo" src="/imgs/logo.png" alt="Logo">
             </div>
-            <div class="contact">
+            <div class="navbar" ng-controller="MenuController">
+              <div class="nav-item" ng-repeat="item in items">
+                <menu-item info="item"></menu-item>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact">
               <form id="form" action="contact.php" method="post" enctype="text/plain">
                 Full Name<br>
                 <input type="text" name="Name " required><br><br>
@@ -27,10 +29,10 @@
                 <input type="text" name="Message " placeholder="Comments/Feedback/Questions" size="100" required><br><br>
                 <input type="submit" value="Submit">
               </form>
-            </div>
-            <script src="js/app.js"></script>
-            <script src="js/controllers/MenuController.js"></script>
-            <script src="js/directives/MenuDirective.js"></script>
+      </div>
+          <script src="js/app.js"></script>
+          <script src="js/controllers/MenuController.js"></script>
+          <script src="js/directives/MenuDirective.js"></script>
 
         </div>
     </body>
