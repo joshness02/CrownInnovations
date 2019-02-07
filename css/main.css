@@ -1,5 +1,4 @@
-
-/*body, html {
+body, html {
     margin: 0;
     padding: 0;
 }
@@ -135,51 +134,24 @@
 }
 @media only screen and (orientation: landscape){
     #logo {
-      width: var(--main-logo-size);
+      width: 10%;
       height: auto;
       float: left;
       transition: height ease-in-out 0.3s;
     }
     .nav-item {
         margin: 0;
-        width: 100%;
+        width: 90%;
         display: inline;
         height: var(--navbar-height);
         float: right;
     }
     .navbar {
-        width: 100%;
+        width: 90%;
         height: 100px;
         float: right;
         justify-content: space-around;
         align-content: center;
         display: flex;
     }
-}*/
-
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: red;
-    min-width: 160px;
-    z-index: 10;
-    height: auto;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
