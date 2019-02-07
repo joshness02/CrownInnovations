@@ -2,6 +2,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    background-color: rgb(200, 200, 200);
 }
 :root {
   --main-div-padding: 500px;
@@ -100,9 +101,9 @@ body, html {
   background-color: rgb(200, 200, 200);
   width: 100%;
   height: 100%;
+    margin-left: 10%;
 }
 .contact #form {
-  margin-left: 10%;
 }
 
 .nav-button:hover {
