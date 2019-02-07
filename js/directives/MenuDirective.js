@@ -7,3 +7,8 @@ app.directive("menuItem", function(){
         templateUrl: 'js/directives/MenuDirective.html',
     };
 });
+
+var buttons = document.getElementsByClassName("nav-button");
+for(var i = 0; i < buttons.length; i+=1){
+    buttons[i].addEventListener("click", buttons[i].info);
+}
