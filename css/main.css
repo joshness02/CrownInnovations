@@ -129,7 +129,7 @@ body, html {
 }
 
 .dunno {
-  width: auto;
+  width: 40%;
   height: 80%;
   background-color: rgb(190, 190, 190);
   float: left;
