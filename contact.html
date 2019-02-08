@@ -12,12 +12,14 @@
           <div id="logo-container">
             <img id="logo" src="imgs/logo.png" alt="Logo">
           </div>
-            <div class="navbar" ng-controller="MenuController">
+          <div class="navbar" ng-controller="MenuController">
                 <div class="nav-item" ng-repeat="item in items">
                     <menu-item info="item"></menu-item>
                 </div>
             </div>
+
             <div class="contact">
+              <h3>Have questions/comments/feedback?<br>Please email us!<br>We will try to get back to you within 1-2 buisness days.</h3>
               <form id="form" action="contact.php" method="post" enctype="text/plain">
                 Full Name<br>
                 <input type="text" name="Name " required><br><br>
@@ -27,6 +29,22 @@
                 <input type="text" name="Message " placeholder="Comments/Feedback/Questions" size="100" required><br><br>
                 <input type="submit" value="Submit">
               </form>
+            </div>
+            <div class="dunno">
+              <h1>Something goes here...</h1>
+            </div>
+
+            <div class="footer">
+              <h1>Footer</h1>
+              <ul>
+                <li>Footer Content</li>
+                <li>Footer Content</li>
+                <li>Footer Content</li>
+                <li>Footer Content</li>
+                <li>Footer Content</li>
+                <li>Footer Content</li>
+              </ul>
+              <h3>Have questions? <a href="contact.html">Contact Us!</a></h3>
             </div>
             <script src="js/app.js"></script>
             <script src="js/controllers/MenuController.js"></script>
