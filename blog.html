@@ -8,7 +8,7 @@
         <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div ng-app="MenuApp">
+        <div ng-app="CrownInnovationsApp">
           <div id="logo-container">
             <img id="logo" src="imgs/logo.png" alt="Logo">
           </div>
@@ -16,6 +16,12 @@
                 <div class="nav-item" ng-repeat="item in items">
                     <menu-item info="item"></menu-item>
                 </div>
+            </div>
+            
+            <div class="blog-container">
+            
+                <script src="js/controllers/BlogController.js"></script>
+                <script src="js/directives/BlogDirective.js"></script>
             </div>
 
             <script src="js/app.js"></script>
