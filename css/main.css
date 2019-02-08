@@ -123,13 +123,13 @@ body, html {
 .contact {
   float: left;
   background-color: rgb(200, 200, 200);
-  width: 40%;
+  width: 50%;
   height: 50%;
   margin-left: 10%;
 }
 
 .dunno {
-  width: 50%;
+  width: auto;
   height: 80%;
   background-color: rgb(190, 190, 190);
   float: left;
