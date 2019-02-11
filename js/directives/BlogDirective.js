@@ -2,7 +2,7 @@ app.directive("blogArticle", function(){
     return {
         restrict: 'E',
         scope: {
-            info: '=',
+            article: '=',
         },
         templateUrl: 'js/directives/BlogDirective.html',
     };

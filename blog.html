@@ -20,9 +20,9 @@
 
             <div class="blog-container">
 
-                <div class = "blog-article-container">
+                <div class = "blog-article-container" ng-controller="BlogController">
                     <div class = "blog-article" ng-repeat="article in articles">
-                        <blog-article class="blog-article"></blog-article>
+                        <blog-article class="blog-article" article="article"></blog-article>
                     </div>
                 </div>
                 
