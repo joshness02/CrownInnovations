@@ -17,9 +17,15 @@
                     <menu-item info="item"></menu-item>
                 </div>
             </div>
-            
+
             <div class="blog-container">
-            
+
+                <div class = "blog-article-container">
+                    <div class = "blog-article" ng-repeat="article in articles">
+                        <blog-article class="blog-article"></blog-article>
+                    </div>
+                </div>
+                
                 <script src="js/controllers/BlogController.js"></script>
                 <script src="js/directives/BlogDirective.js"></script>
             </div>
