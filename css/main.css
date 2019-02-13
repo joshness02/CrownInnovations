@@ -184,8 +184,7 @@ body, html {
 }
 @media only screen and (orientation: landscape){
     #logo {
-      width: 10%;
-      height: auto;
+      height: 100%;
       float: left;
       transition: height ease-in-out 0.3s;
     }
