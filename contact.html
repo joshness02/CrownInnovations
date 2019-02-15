@@ -18,19 +18,19 @@
                 </div>
             </div>
 
-            <div class="contact">
+            <div class="smallcontent" style="background-color: rgb(200, 200, 200); margin-left:10%; margin-right:10%;">
               <h3>Have questions/comments/feedback?<br>Please email us!<br>We will try to get back to you within 1-2 buisness days.</h3>
-              <form id="form" action="contact.php" method="post" enctype="text/plain">
+              <form id="form" action="javascript:mail()" method="post" enctype="text/plain">
                 Full Name<br>
-                <input type="text" name="Name " required><br><br>
-                <input type="radio" name="Do I raise Bottle Calves " value=" Yes" required>I raise bottle calves<br>
-                <input type="radio" name="Do I raise Bottle Calves " value=" No" checked required>I do not raise bottle calves<br><br>
+                <input type="text" name="name" id="name" required><br><br>
+                <input type="radio" name="name" value="Yes" id="button" onclick="javascript:variable2('I do raise bottle calves.')" required>I raise bottle calves<br>
+                <input type="radio" name="name" value="No" id="button2" onclick="javascript:variable2('I do raise bottle calves.')" checked required>I do not raise bottle calves<br><br>
                 Message<br>
-                <input type="text" name="Message " placeholder="Comments/Feedback/Questions" size="100" required><br><br>
-                <input type="submit" value="Submit">
+                <input type="text" name="message" id="message" placeholder="Comments/Feedback/Questions" size="100" required><br><br>
+                <input type="submit" value="Submit" onclick="javascript:variable1(document.getElementById('name').value);variable3(document.getElementById('message').value);">
               </form>
             </div>
-            <div class="dunno">
+            <div class="smallcontent">
               <h1>Something goes here...</h1>
             </div>
 
@@ -47,6 +47,7 @@
               <h3>Have questions? <a href="contact.html">Contact Us!</a></h3>
             </div>
             <script src="js/app.js"></script>
+            <script src="js/contact.js"></script>
             <script src="js/controllers/MenuController.js"></script>
             <script src="js/directives/MenuDirective.js"></script>
 
