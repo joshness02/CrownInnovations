@@ -12,5 +12,5 @@ function variable3(input) {
 };
 
 function mail(){
-  window.open("mailto:calfpacifier@gmail.com?subject=Feedback/Questions&body="+name+"\n"+raise+"\n"+message);
+  window.open("mailto:calfpacifier@gmail.com?subject=Feedback/Questions&body="+name+" "+message);
 };
