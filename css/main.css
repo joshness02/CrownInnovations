@@ -9,7 +9,7 @@ body, html {
   --main-div-padding: 500px;
   --main-left-side-size: 60%;
   --main-left-side-size-2: 40%;
-  --main-logo-size: 150px;
+  --main-logo-size: 5%;
   --navbar-height: 50px;
 }
 
@@ -24,48 +24,34 @@ body, html {
 
 }
 
-/*index.html css*/
 .mainheader {
   padding: 0;
   width: 100%;
-  height: 25%;
-  background-color: rgb(150, 150, 150);
+  height: 50%;
   float: right;
 }
 
-.products {
+.largecontent {
   padding: auto;
   padding-top: 0px;
   height: var(--main-div-padding);
   width: var(--main-left-side-size);
-  background-color: rgb(200, 200, 200);
   float: left;
 }
 
-.about {
+.smallcontent {
   padding: auto;
   width: calc(100% - var(--main-left-side-size));
   padding-top: 0px;
   height: var(--main-div-padding);
-  background-color: rgb(170, 170, 170);
   float: left;
 }
 
-.blog {
+.halfcontent {
   padding: auto;
+  width: 50%;
   padding-top: 0px;
   height: var(--main-div-padding);
-  width: var(--main-left-side-size-2);
-  background-color: rgb(170, 170, 170);
-  float: left;
-}
-
-.resources {
-  padding: auto;
-  width: calc(100% - var(--main-left-side-size-2));
-  padding-top: 0px;
-  height: var(--main-div-padding);
-  background-color: rgb(190, 190, 190);
   float: left;
 }
 
@@ -77,9 +63,12 @@ body, html {
   float: left;
 }
 
+.sidebyside h1, h2, h3, h4, h5, h6, p, form {
+  margin-left: 3%;
+}
 /*Navbar css*/
 .navbar {
-    height: 50px;
+    height: 25px;
     margin: 0;
     padding: 0px 0px;
     transition: 0.2s;
@@ -95,10 +84,10 @@ body, html {
     height: 100%;
     border: none;
     color: black;
-    background-color: rgb(200, 200, 200);
     text-align: center;
     position: relative;
     display: block;
+    transition: background 0.3s;
 }
 
 .nav-text {
@@ -118,85 +107,80 @@ body, html {
 .nav-button:active {
     background-color: rgb(160, 160, 160);
 }
-
-/*contact.html css*/
-.contact {
-  float: left;
-  background-color: rgb(200, 200, 200);
-  width: 50%;
-  height: 50%;
-}
-
-.dunno {
-  width: 40%;
-  height: 80%;
-  background-color: rgb(190, 190, 190);
-  float: left;
-}
-
-/*about.html css*/
-.aboutus {
-  float: left;
-  width: 100%;
-  height: 500px;
-  background-color: rgb(190, 190, 190);
-}
-.otherbout {
-  float: left;
-  width: 50%;
-  height: 500px;
-  background-color: rgb(160, 160, 160);
-}
-.people {
-  float: left;
-  width: 50%;
-  height: 500px;
+/*IDs*/
+#blog {
   background-color: rgb(180, 180, 180);
 }
-
+#products {
+  background-color: rgb(190, 190, 190);
+}
+#about {
+  background-color: rgb(180, 180, 180);
+}
+#resources {
+  background-color: rgb(170, 170, 170);
+}
+#slideshow {
+  background-color: rgb(150, 150, 150);
+}
+#contactinfo {
+  margin-left: var(--main-logo-size);
+  padding-right: 5%;
+  background-color: rgb(190, 190, 190);
+}
 /*@media css*/
 @media only screen and (orientation: portrait){
     .nav-item {
         width: 100%;
-        display: inline-block;
+        display: inline;
         height: 50px;
+        z-index: 100;
+        position: static;
+    }
+    .nav-button {
+
     }
     .navbar {
-        top: 150px;
+        width: 100%;
+        position: fixed;
+        float: right;
     }
     #logo {
-        height: 100%;
-        display: inline-block;
+      height: 50px;
+      display: inline-block;
     }
     #logo-container {
         text-align: center;
-        width: 100%;
-        height: 100%;
+        float: left;
     }
 }
 @media only screen and (orientation: landscape){
     #logo {
-      width: 10%;
       height: auto;
+      width: var(--main-logo-size);
       float: left;
       transition: height ease-in-out 0.3s;
     }
     .nav-item {
-        margin: 0;
-        width: 90%;
-        display: inline;
-        height: var(--navbar-height);
-        float: right;
+      margin: 0;
+      width: 90%;
+      display: inline;
+      height: var(--navbar-height);
+      float: right;
+    }
+    .nav-button {
+      background-color: rgba(200, 180, 180);
     }
     .navbar {
-        width: 90%;
-        height: 100px;
-        float: right;
-        justify-content: space-around;
-        align-content: center;
-        display: flex;
+      width: calc(100% - var(--main-logo-size));
+      height: 50px;
+      float: left;
+      justify-content: space-around;
+      align-content: center;
+      display: flex;
     }
 }
+
 /*
 .dropbtn {
   background-color: #4CAF50;
