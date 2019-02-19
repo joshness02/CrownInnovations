@@ -21,15 +21,13 @@
               <div class="smallcontent" id="contactinfo">
               <h3>Have questions/comments/feedback?<br>Please email us!<br>We will try to get back to you within 1-2 buisness days.</h3>
               <form id="form" action="javascript:mail()" method="post" enctype="text/plain">
-                Full Name<br>
-                <input type="text" name="name" id="name" required><br><br>
-                <input type="radio" name="name" value="Yes" id="button" onclick="javascript:variable2('I do raise bottle calves.')" required>I raise bottle calves<br>
-                <input type="radio" name="name" value="No" id="button2" onclick="javascript:variable2('I do raise bottle calves.')" checked required>I do not raise bottle calves<br><br>
-                Message<br>
-                <input type="text" name="message" id="message" placeholder="Comments/Feedback/Questions" size="100" required><br><br>
-                <input type="submit" value="Submit" onclick="javascript:variable1(document.getElementById('name').value);variable3(document.getElementById('message').value);">
+                Full Name:<br>
+                <input type="text" style="height:5%;font-size:14pt;width:50%;" name="name" id="name" required><br><br>
+                Message:<br>
+                <textarea type="text" style="height:20%;font-size:10pt;width:100%;" name="message" id="message" placeholder="Comments/Feedback/Questions" required></textarea><br><br>
+                <input type="submit" style="width:15%;"value="Submit" onclick="javascript:variable1(document.getElementById('name').value);variable3(document.getElementById('message').value);">
               </form>
-              <h3><a href="mailto:calfpacifier@gmail.com">Or write your own email</a></h3>
+              <h4><a href="mailto:calfpacifier@gmail.com">Or write your own email</a></h4>
             </div>
               <div class="smallcontent" id="">
               <h1>Something goes here...</h1>
