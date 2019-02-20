@@ -86,11 +86,12 @@ body, html {
 
 .nav-text {
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-size: 150%;
+  font-size: 110%;
+    font-family: Arial ;
 }
 
 .nav-button:hover {
@@ -124,7 +125,7 @@ body, html {
   background-color: rgb(190, 190, 190);
 }
 /*@media css*/
-@media only screen and (orientation: portrait){
+@media only screen and (max-width: 640px){
     .nav-item {
         width: 100%;
         display: inline;
@@ -149,7 +150,7 @@ body, html {
         float: left;
     }
 }
-@media only screen and (orientation: landscape){
+@media only screen and (min-width: 640px){
     #logo {
       height: 100%;
     }
