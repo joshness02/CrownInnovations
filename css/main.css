@@ -9,7 +9,7 @@ body, html {
   --main-div-padding: 500px;
   --main-left-side-size: 60%;
   --main-left-side-size-2: 40%;
-  --main-logo-size: 5%;
+  --main-logo-width: 50px;
   --navbar-height: 50px;
 }
 
@@ -63,9 +63,6 @@ body, html {
   float: left;
 }
 
-.sidebyside h1, h2, h3, h4, h5, h6, p, form {
-  margin-left: 3%;
-}
 /*Navbar css*/
 .navbar {
     height: 25px;
@@ -156,28 +153,20 @@ body, html {
 }
 @media only screen and (orientation: landscape){
     #logo {
-      height: auto;
-      width: var(--main-logo-size);
+      height: 50px;
+      width: auto;/*var(--main-logo-size);*/
       float: left;
       transition: height ease-in-out 0.3s;
     }
     .nav-item {
       margin: 0;
-      width: 90%;
-      display: inline;
-      height: var(--navbar-height);
       float: right;
     }
     .nav-button {
       background-color: rgba(200, 180, 180);
     }
     .navbar {
-      width: calc(100% - var(--main-logo-size));
-      height: calc(11% - var(--main-logo-size));
-      float: left;
-      justify-content: space-around;
-      align-content: center;
-      display: flex;
+        grid-template-columns: 100px 1fr;
     }
 }
 
