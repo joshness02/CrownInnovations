@@ -153,20 +153,21 @@ body, html {
 }
 @media only screen and (orientation: landscape){
     #logo {
-      height: 50px;
-      width: auto;/*var(--main-logo-size);*/
-      float: left;
-      transition: height ease-in-out 0.3s;
+      height: 100%;
     }
     .nav-item {
-      margin: 0;
-      float: right;
+        margin: 0;
+        float: right;
+        height: 100%;
     }
     .nav-button {
-      background-color: rgba(200, 180, 180);
+        margin: 0px;
+      background-color: rgba(200, 180, 180, 0);
     }
     .navbar {
-        grid-template-columns: 100px 1fr;
+        display: grid;
+        grid-template-columns: 100px repeat(6, 1fr);
+        height: 50px;
     }
 }
 
