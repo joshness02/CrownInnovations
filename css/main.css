@@ -19,10 +19,6 @@ body, html {
   padding: 0;
 }
 
-#logo-container {
-  transition: all 0.3s;
-
-}
 
 .mainheader {
   padding: 0;
@@ -69,6 +65,7 @@ body, html {
     margin: 0;
     padding: 0px 0px;
     transition: 0.2s;
+    background-color: rgb(255, 255, 255);
 }
 
 .nav-item {
@@ -97,12 +94,13 @@ body, html {
 }
 
 .nav-button:hover {
-  cursor: pointer;
-  background-color: rgb(180, 180, 180);
+    cursor: pointer;
+    background-color: #F00;
+    color: #FFF;
 }
 
 .nav-button:active {
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(200, 0, 0);
 }
 /*IDs*/
 #blog {
