@@ -125,6 +125,10 @@ body, html {
   background-color: rgb(190, 190, 190);
 }
 
+#thanks {
+  float: left;
+  margin-left: 5%;
+}
 .person {
   float: left;
   margin: 30px;
