@@ -8,6 +8,5 @@ function variable3(input) {
 };
 
 function mail(){
-  window.location.href = "mailto:calfpacifier@gmail.com?subject=Feedback/Questions&body="+name+" "+message;
-  alert("Thank You!");
+  window.location.href = "mailto:calfpacifier@gmail.com?subject=Feedback/Questions&body="+name+". "+message;
 };

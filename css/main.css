@@ -25,25 +25,31 @@ body, html {
   float: right;
 }
 
+/*content that fills up a large the div it is in*/
 .largecontent {
   padding: auto;
   padding-top: 0px;
+  padding-left: 2%;
   height: var(--main-div-padding);
-  width: var(--main-left-side-size);
+  width: calc(var(--main-left-side-size) - 2%);
   float: left;
 }
 
+/*content that fills up a small region the div it is in*/
 .smallcontent {
   padding: auto;
-  width: calc(100% - var(--main-left-side-size));
+  padding-left: 2%;
+  width: calc(98% - var(--main-left-side-size));
   padding-top: 0px;
   height: var(--main-div-padding);
   float: left;
 }
 
+/*content that fills up half the div it is in*/
 .halfcontent {
   padding: auto;
-  width: 50%;
+  padding-left: 2%;
+  width: 48%;
   padding-top: 0px;
   height: var(--main-div-padding);
   float: left;
@@ -116,9 +122,6 @@ body, html {
 }
 
 #contactinfo {
-  margin-left: var(--main-logo-size);
-  padding-right: 5%;
-  background-color: #F00;
 }
 
 #mentors {
