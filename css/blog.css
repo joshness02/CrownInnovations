@@ -1,11 +1,12 @@
 .blog-container {
-    float: right;
-    width: 80%;
+    overflow: auto;
 }
 
 .blog-article {
     background-color: white;
-    margin: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
 .blog-header {
@@ -26,11 +27,17 @@
 }
 
 .blog-history {
-    width: 18%;
-    margin-left: 10px;
-    background-color: #FF0;
-    float: left;
-    height: 900%;
+    background-color: #FE0;
+    overflow: scroll;
+    margin-bottom: 5px;
+    
+}
+
+.blog {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 5fr;
     position: fixed;
-    top: 60px;
+    height: 90%;
+    padding: 10px;
 }

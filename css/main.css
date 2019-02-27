@@ -187,7 +187,7 @@ body, html {
 
   .navbar {
     display: grid;
-    grid-template-columns: 90px repeat(6, 1fr);
+    grid-template-columns: 90px repeat(6, 1fr) 10px;
     height: 50px;
     padding-left: 10px;
       padding-right: 10px;

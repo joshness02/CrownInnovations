@@ -15,6 +15,26 @@ app.controller("BlogController", ['$scope', function($scope){
             date: new Date('2018', '01', '10'),
             content: "blog1.html",
         },
+        {
+            title: "Welcome to Crown Innovations",
+            date: new Date('2018', '01', '10'),
+            content: "blog1.html",
+        },
+        {
+            title: "Welcome to Crown Innovations",
+            date: new Date('2018', '01', '10'),
+            content: "blog1.html",
+        },
+        {
+            title: "Welcome to Crown Innovations",
+            date: new Date('2018', '01', '10'),
+            content: "blog1.html",
+        },
+        {
+            title: "Welcome to Crown Innovations",
+            date: new Date('2018', '01', '10'),
+            content: "blog1.html",
+        },
     ];
     for(var i = 0; i < $scope.articles.length; i++){
         var article = $scope.articles[i];
