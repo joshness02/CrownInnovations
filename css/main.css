@@ -3,6 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   background-color: rgb(200, 200, 200);
+    margin-top: 25px;
 }
 
 :root {
@@ -137,6 +138,8 @@ body, html {
   float: left;
   margin: 30px;
 }
+
+
 /*@media css*/
 @media only screen and (max-width: 720px) {
   .nav-item {
@@ -186,7 +189,11 @@ body, html {
     display: grid;
     grid-template-columns: 90px repeat(6, 1fr);
     height: 50px;
-    padding: 0 10 0 15;
+    padding-left: 10px;
+      padding-right: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0px;
   }
 }
 

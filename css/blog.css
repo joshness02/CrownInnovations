@@ -1,0 +1,36 @@
+.blog-container {
+    float: right;
+    width: 80%;
+}
+
+.blog-article {
+    background-color: white;
+    margin: 10px;
+}
+
+.blog-header {
+    border-bottom: 10px solid #F00;
+    float: left;
+    width: 100%
+}
+
+
+.blog-title {
+    float: left;
+}
+
+.blog-date {
+    font-style: italic;
+    font-size: 14px;
+    float: right;
+}
+
+.blog-history {
+    width: 18%;
+    margin-left: 10px;
+    background-color: #FF0;
+    float: left;
+    height: 900%;
+    position: fixed;
+    top: 60px;
+}

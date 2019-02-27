@@ -1,8 +1,18 @@
 app.controller("BlogController", ['$scope', function($scope){
     $scope.articles = [
         {
-            title: "First Blog Post",
+            title: "Welcome to Crown Innovations",
             date: new Date('2018', '01', '08'),
+            content: "blog1.html",
+        },
+        {
+            title: "Welcome to Crown Innovations",
+            date: new Date('2018', '01', '09'),
+            content: "blog1.html",
+        },
+        {
+            title: "Welcome to Crown Innovations",
+            date: new Date('2018', '01', '10'),
             content: "blog1.html",
         },
     ];
