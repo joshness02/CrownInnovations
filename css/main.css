@@ -144,7 +144,7 @@ body, html {
 @media only screen and (max-width: 720px) {
   .nav-item {
     width: 100%;
-    display: inline;
+    display: none;
     height: 50px;
     z-index: 100;
     position: static;
@@ -153,10 +153,33 @@ body, html {
   .nav-button {}
 
   .navbar {
+      position: fixed;
+      top: 0px;
     width: 100%;
-    position: fixed;
-    float: right;
+    height: 50px;
   }
+    .navbar-dropdown-btn{
+        display: inline;
+        width: 40px;
+        height: 40px;
+        margin: 5px 10px 0 0;
+        padding: 0;
+        float: right;
+        background-color: #AAA;
+            border: none;
+        transition: background-color 0.2s;
+    }
+    .navbar-dropdown-btn:hover {
+        border: none;
+        background-color: #F00;
+    }
+    .navbar-dropdown-btn:active {
+        border: none;
+        background-color: #000;
+    }
+    .navbar-dropdown-btn:enabled {
+        border: none;
+    }
 
   #logo {
     height: 50px;
@@ -184,7 +207,10 @@ body, html {
     margin: 0px;
     background-color: rgba(200, 180, 180, 0);
   }
-
+    .navbar-dropdown-btn{
+        display: none;
+    }
+    
   .navbar {
     display: grid;
     grid-template-columns: 90px repeat(6, 1fr) 10px;
