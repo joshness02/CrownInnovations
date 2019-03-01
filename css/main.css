@@ -25,36 +25,33 @@ body, html {
   float: right;
 }
 
-/*content that fills up a large the div it is in*/
-.largecontent {
+/*the content class*/
+.sidebyside {
+  display: grid;
+}
+.divcontent {
   padding: auto;
   padding-top: 0px;
   padding-left: 2%;
   height: var(--main-div-padding);
-  width: calc(var(--main-left-side-size) - 2%);
   float: left;
+  display: grid;
 }
-
-/*content that fills up a small region the div it is in*/
-.smallcontent {
-  padding: auto;
-  padding-left: 2%;
-  width: calc(98% - var(--main-left-side-size));
-  padding-top: 0px;
-  height: var(--main-div-padding);
-  float: left;
+.space-1 {
+  width: 1fr;
 }
-
-/*content that fills up half the div it is in*/
-.halfcontent {
-  padding: auto;
-  padding-left: 2%;
-  width: 48%;
-  padding-top: 0px;
-  height: var(--main-div-padding);
-  float: left;
+.space-2 {
+  width: 2fr;
 }
-
+.space-3 {
+  width: 3fr;
+}
+.space-4 {
+  width: 4fr;
+}
+.space-5 {
+  width: 5fr;
+}
 .footer {
   padding: 0;
   width: 100%;
@@ -113,7 +110,8 @@ body, html {
 
 #products {}
 
-#about {}
+#about {
+}
 
 #resources {}
 
