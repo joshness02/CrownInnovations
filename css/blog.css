@@ -1,0 +1,43 @@
+.blog-container {
+    overflow: auto;
+}
+
+.blog-article {
+    background-color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.blog-header {
+    border-bottom: 10px solid #F00;
+    float: left;
+    width: 100%
+}
+
+
+.blog-title {
+    float: left;
+}
+
+.blog-date {
+    font-style: italic;
+    font-size: 14px;
+    float: right;
+}
+
+.blog-history {
+    background-color: #FE0;
+    overflow: scroll;
+    margin-bottom: 5px;
+    
+}
+
+.blog {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 5fr;
+    position: fixed;
+    height: 90%;
+    padding: 10px;
+}
