@@ -1,6 +1,6 @@
 (function(){
     var navbtn = document.getElementById("navbar-dropdown-btn");
-    var navmenu = document.getElementById("navbar-dropdown");
+    var navmenu = document.getElementById("navbar-btns");
     navbtn.addEventListener("click", function(event){
         console.log("Clicked");
         if(navmenu.classList){
