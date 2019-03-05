@@ -107,7 +107,7 @@
   border-bottom-left-radius: 0;
 }
 .next:hover, .prev:hover {
-  background-color: #FFF;
+  background-color: #FFFFFFAA;
 }
 /*IDs*/
 #blog {
