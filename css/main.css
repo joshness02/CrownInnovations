@@ -1,31 +1,27 @@
 /*Main css*/
-body, html {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(200, 200, 200);
-    margin-top: 25px;
+ body, html {
+     margin: 0;
+     padding: 0;
+     background-color: rgb(200, 200, 200);
+     margin-top: 25px;
 }
-
-:root {
-  --main-div-padding: 500px;
-  --main-left-side-size: 60%;
-  --main-left-side-size-2: 40%;
-  --main-logo-width: 50px;
-  --navbar-height: 50px;
+ :root {
+     --main-div-padding: 500px;
+     --main-left-side-size: 60%;
+     --main-left-side-size-2: 40%;
+     --main-logo-width: 50px;
+     --navbar-height: 50px;
 }
-
 /*Logo css*/
-#logo {
-  padding: 0;
+ #logo {
+     padding: 0;
 }
-
-.mainheader {
-  padding: 0;
-  width: 100%;
-  height: 50%;
-  float: right;
+ .mainheader {
+     padding: 0;
+     width: 100%;
+     height: 50%;
+     float: right;
 }
-
 /*the content class*/
 .sidebyside {
   display: grid;
@@ -54,218 +50,194 @@ body, html {
 .space-5 {
   grid-column: span 5fr;
 }
-.footer {
-  padding: 0;
-  width: 100%;
-  height: 35%;
-  background-color: #FFF;
-  float: left;
+ .footer {
+     padding: 0;
+     width: 100%;
+     height: 35%;
+     background-color: #FFF;
+     float: left;
 }
-
 /*Navbar css*/
-.navbar {
-  height: 25px;
-  margin: 0;
-  padding: 0px 0px;
-  transition: 0.2s;
-  background-color: #FFF;
+ .navbar {
+     height: 25px;
+     margin: 0;
+     padding: 0px 0px;
+     transition: 0.2s;
+     background-color: #FFF;
 }
-
-.nav-item {
-  margin: 0px 0px;
+ .nav-item {
+     margin: 0px 0px;
 }
-
-.nav-button {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  color: black;
-  text-align: center;
-  position: relative;
-  display: block;
-  transition: background 0.3s;
+ .nav-button {
+     margin: 0;
+     width: 100%;
+     height: 100%;
+     border: none;
+     color: black;
+     text-align: center;
+     position: relative;
+     display: block;
+     transition: background 0.3s;
 }
-
-.nav-text {
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  font-size: 110%;
-  font-family: Arial;
+ .nav-text {
+     position: absolute;
+     top: 52%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     margin: 0;
+     font-size: 110%;
+     font-family: Arial;
 }
-
-.nav-button:hover {
-  cursor: pointer;
-  background-color: #F00;
-  color: #FFF;
+ .nav-button:hover {
+     cursor: pointer;
+     background-color: #F00;
+     color: #FFF;
 }
-
-.nav-button:active {
-  background-color: rgb(200, 0, 0);
+ .nav-button:active {
+     background-color: rgb(200, 0, 0);
 }
-
 /*IDs*/
-#blog {}
-
-#products {}
-
-#about {
+ #blog {
 }
-
-#resources {}
-
-#slideshow {
-  background-color: rgb(150, 150, 150);
+ #products {
 }
-
-#contactinfo {
+ #about {
 }
-
-#mentors {
-  background-color: rgb(190, 190, 190);
+ #resources {
 }
-
-#thanks {
-  float: left;
-  margin-left: 5%;
+ #slideshow {
+     background-color: rgb(150, 150, 150);
 }
-
-.person {
-  float: left;
-  margin: 30px;
+ #contactinfo {
 }
-
+ #mentors {
+     background-color: rgb(190, 190, 190);
+}
+ #thanks {
+     float: left;
+     margin-left: 5%;
+}
+ .person {
+     float: left;
+     margin: 30px;
+}
 
 /*@media css*/
-@media only screen and (max-width: 720px) {
-  .nav-item {
-    width: 100%;
-    display: none;
-    height: 50px;
-    z-index: 100;
-    position: static;
-  }
-
-  .nav-button {}
-
-  .navbar {
-      position: fixed;
-      top: 0px;
-    width: 100%;
-    height: 50px;
-  }
-    .navbar-dropdown-container {
-        display: inline;
-        background-color: red;
+ @media only screen and (max-width: 720px) {
+     .nav-item {
+         width: 100%;
+         display: none;
+         height: 50px;
+         z-index: 100;
+         position: static;
     }
-    .navbar-dropdown-btn{
-        width: 40px;
-        height: 40px;
-        margin: 5px 10px 0 0;
-        padding: 0;
-        float: right;
-        background-color: #AAA;
-            border: none;
-        transition: background-color 0.2s;
+     .navbar {
+         position: fixed;
+         top: 0px;
+         width: 100%;
+         height: 50px;
     }
-    .navbar-dropdown-btn:hover {
-        border: none;
-        background-color: #F00;
+     .navbar-dropdown-container {
+         display: inline;
+         background-color: red;
     }
-    .navbar-dropdown {
-        display: none;
-        position: absolute;
-        z-index: 1000;
-        background-color: red;
-        width: 50%;
-        height: 1000px;
-        opacity: 0;
-        transition: opacity 2s;
+     #navbar-dropdown-btn{
+         width: 40px;
+         height: 40px;
+         margin: 5px 10px 0 0;
+         padding: 0;
+         float: right;
+         background-color: #AAA;
+         border: none;
+         transition: background-color 0.2s;
     }
-    .navbar-dropdown-container:active .navbar-dropdown {
-        display: block;
-        z-index: 0;
-        position: relative;
-        left: 50%;
-        opacity: 1;
+     #navbar-dropdown-btn:hover {
+         border: none;
+         background-color: #F00;
     }
-    .navbar-dropdown-btn:active {
-        border: none;
-        background-color: #000;
+     #navbar-dropdown {
+         display: none;
+         position: absolute;
+         z-index: 1000;
+         background-color: red;
+         width: 50%;
+         height: 1000px;
+         opacity: 0;
+         transition: opacity 2s;
     }
-    .navbar-dropdown-btn:enabled {
-        border: none;
+     #navbar-dropdown .active {
+         display: block;
+         background-color: red;
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100px;
+         height: 100px;
     }
-
-  #logo {
-    height: 50px;
-    display: inline-block;
-  }
-
-  #logo-container {
-    text-align: center;
-    float: left;
-  }
+     #navbar-dropdown-btn:active {
+         border: none;
+         background-color: #000;
+    }
+     #navbar-dropdown-btn:enabled {
+         border: none;
+    }
+     #logo {
+         height: 50px;
+         display: inline-block;
+    }
+     #logo-container {
+         text-align: center;
+         float: left;
+    }
 }
-
-@media only screen and (min-width: 720px) {
-  #logo {
-    height: 95%;
-  }
-
-  .nav-item {
-    margin: 0;
-    float: right;
-    height: 100%;
-  }
-
-  .nav-button {
-    margin: 0px;
-    background-color: rgba(200, 180, 180, 0);
-  }
-    .navbar-dropdown-btn{
-        display: none;
+ @media only screen and (min-width: 720px) {
+     #logo {
+         height: 95%;
     }
-
-  .navbar {
-    display: grid;
-    grid-template-columns: 90px repeat(6, 1fr) 10px;
-    height: 50px;
-    padding-left: 10px;
-      padding-right: 10px;
-      position: fixed;
-      width: 100%;
-      top: 0px;
-  }
+     .nav-item {
+         margin: 0;
+         float: right;
+         height: 100%;
+    }
+     .nav-button {
+         margin: 0px;
+         background-color: rgba(200, 180, 180, 0);
+    }
+     #navbar-dropdown-btn{
+         display: none;
+    }
+     .navbar {
+         display: grid;
+         grid-template-columns: 90px repeat(6, 1fr) 10px;
+         height: 50px;
+         padding-left: 10px;
+         padding-right: 10px;
+         position: fixed;
+         width: 100%;
+         top: 0px;
+    }
 }
-
-/*
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+/* .dropbtn {
+     background-color: #4CAF50;
+     color: white;
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
 }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+ .dropdown {
+     position: relative;
+     display: inline-block;
 }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: red;
-    min-width: 160px;
-    z-index: 10;
-    height: auto;
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: red;
+     min-width: 160px;
+     z-index: 10;
+     height: auto;
 }
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}*/
+ .dropdown:hover .dropdown-content {
+     display: block;
+}
+*/
