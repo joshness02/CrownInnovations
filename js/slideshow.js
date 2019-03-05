@@ -3,10 +3,12 @@ updateSlides(slideNumber);
 function nextSlide(){
   slideNumber = slideNumber + 1;
   updateSlides(slideNumber);
+  alert("Works!");
 };
 function prevSlide(){
   slideNumber = slideNumber - 1;
   updateSlides(slideNumber);
+  alert("Works!");
 };
 function updateSlides(n){
   var slides = document.getElementById('slide');

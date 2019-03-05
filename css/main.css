@@ -94,6 +94,7 @@
   padding: 10px;
   border-radius: 3px;
   transition: 0.5s;
+  color: #000;
 }
 .next {
   float: right;
