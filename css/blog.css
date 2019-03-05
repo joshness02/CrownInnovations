@@ -4,8 +4,6 @@
 
 .blog-article {
     background-color: white;
-    margin-left: 10px;
-    margin-bottom: 10px;
     padding: 5px;
 }
 
@@ -29,7 +27,6 @@
 .blog-history {
     background-color: #FE0;
     overflow: scroll;
-    margin-bottom: 5px;
     
 }
 
@@ -40,4 +37,15 @@
     position: fixed;
     height: 90%;
     padding: 10px;
+    
+}
+
+@media only screen and (max-width: 720px) {
+    .blog {
+        grid-template-columns: 100%;
+        grid-template-rows: 200px auto;
+    }
+    .blog-history {
+        display: none;
+    }
 }
