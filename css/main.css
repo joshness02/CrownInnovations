@@ -13,13 +13,15 @@
      --navbar-height: 50px;
 }
 /*Logo css*/
- #logo {
+#logo {
      padding: 0;
 }
- .mainheader {
-     padding: 0;
-     width: 100%;
-     height: 50%;
+.mainheader {
+  padding: auto;
+  padding-top: 0px;
+  height: var(--main-div-padding);
+  float: left;
+  display: inline;
 }
 /*the content class*/
 .sidebyside {
@@ -87,6 +89,27 @@
 .fade {
   transition: 0.5s;
 }
+.next, .prev {
+  text-decoration: none;
+  margin-top: 15%;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.5s;
+  color: #000;
+}
+.next {
+  float: right;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.prev {
+  float: left;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.next:hover, .prev:hover {
+  background-color: #FFF;
+}
 /*IDs*/
 #blog {
   background-color: #EEE;
@@ -116,9 +139,7 @@
      float: left;
      margin: 30px;
 }
-
-
- #logo {
+#logo {
      height: 50px;
      display: inline-block;
 }
