@@ -37,17 +37,22 @@ body, html {
   padding-left: 2%;
   height: var(--main-div-padding);
   float: left;
-  display: grid;
+  display: inline;
 }
 .space-1 {
+  grid-column-end: span 1fr;
 }
 .space-2 {
+  grid-column-end: span 2fr;
 }
 .space-3 {
+  grid-column-end: span 3fr;
 }
 .space-4 {
+  grid-column: span 4fr;
 }
 .space-5 {
+  grid-column: span 5fr;
 }
 .footer {
   padding: 0;
@@ -224,7 +229,7 @@ body, html {
     .navbar-dropdown-btn{
         display: none;
     }
-    
+
   .navbar {
     display: grid;
     grid-template-columns: 90px repeat(6, 1fr) 10px;
