@@ -100,28 +100,38 @@
  .nav-button:active {
      background-color: rgb(200, 0, 0);
 }
+.slide {
+  display: none;
+}
+.fade {
+  transition: 0.5s;
+}
 /*IDs*/
- #blog {
+#blog {
+  background-color: #EEE;
 }
- #products {
+#products {
+  background-color: #FFF;
 }
- #about {
+#about {
+  background-color: #DDD;
 }
- #resources {
+#resources {
+  background-color: #DDD;
 }
- #slideshow {
+#slideshow {
      background-color: rgb(150, 150, 150);
 }
- #contactinfo {
+#contactinfo {
 }
- #mentors {
+#mentors {
      background-color: rgb(190, 190, 190);
 }
- #thanks {
+#thanks {
      float: left;
      margin-left: 5%;
 }
- .person {
+.person {
      float: left;
      margin: 30px;
 }
