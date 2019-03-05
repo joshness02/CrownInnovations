@@ -18,6 +18,8 @@ function updateSlides(n){
   }
   for(var i = 0; i < slides.length; i++){
     slides[i].style.display = "none";
+    slides[slideNumber-1].style.opacity = "0%";
   }
   slides[slideNumber-1].style.display = "block";
+  slides[slideNumber-1].style.opacity = "100%";
 };
