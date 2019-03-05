@@ -29,6 +29,7 @@ body, html {
 /*the content class*/
 .sidebyside {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .divcontent {
   padding: auto;
@@ -39,19 +40,14 @@ body, html {
   display: grid;
 }
 .space-1 {
-  width: 1fr;
 }
 .space-2 {
-  width: 2fr;
 }
 .space-3 {
-  width: 3fr;
 }
 .space-4 {
-  width: 4fr;
 }
 .space-5 {
-  width: 5fr;
 }
 .footer {
   padding: 0;
