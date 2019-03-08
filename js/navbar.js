@@ -5,7 +5,7 @@
         console.log("Clicked");
         if(navmenu.classList){
             navmenu.classList.toggle("active");
-            console.log(navmenu.classList);
+            navbtn.classList.toggle("active");
         }else{
             var classes = navmenu.className.split(" ");
             var i = classes.indexOf("active");
