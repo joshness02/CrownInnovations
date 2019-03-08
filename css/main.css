@@ -2,7 +2,7 @@
  body, html {
      margin: 0;
      padding: 0;
-     background-color: rgb(200, 200, 200);
+     background-color: #FFF;
      margin-top: 25px;
 }
  :root {
@@ -18,6 +18,7 @@
 }
 .mainheader {
   padding: 0px;
+  margin: 0;
   float: left;
   display: inline;
 }
@@ -26,6 +27,7 @@
 .sidebyside {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
 }
 .divcontent {
   padding: auto;
@@ -36,10 +38,12 @@
   display: inline;
   transition: 0.5s;
 }
-.divcontent:hover {
-  box-shadow: 0 0 10px #000;
+.addshadow:hover {
+  box-shadow: 0 0 5px #000;
   z-index: 1;
-};
+  cursor: hand;
+  border-radius: 5px;
+}
 .space-1 {
   grid-column-start: 0;
   grid-column-end: span 1;
@@ -92,11 +96,13 @@
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
+  transition: 1s;
+  margin: 0;
+  padding: 0px;
 }
 .slide:hover {
   background-position: 95% center;
   background-size: 50%;
-  transition: 1s;
   cursor: hand;
 }
 .slide p {
@@ -106,8 +112,7 @@
 .slide:hover p {
   color: black;
 }
-.fade {
-  transition: 0.5s;
+#fade{
 }
 .next, .prev {
   text-decoration: none;
@@ -133,10 +138,10 @@
 
 /*IDs*/
 #blog {
-  background-color: #EEE;
+  background-color: #FFF;
 }
 #products {
-  background-color: #FFF;
+  background-color: #EEE;
 }
 #about {
   background-color: #DDD;
@@ -146,6 +151,7 @@
 }
 #slideshow {
      background-color: rgb(150, 150, 150);
+     margin: 0;
 }
 #contactinfo {
 }
@@ -311,6 +317,7 @@
          position: fixed;
          width: 100%;
          top: 0px;
+         box-shadow: 0 0 3px black;
     }
 }
 /* .dropbtn {
