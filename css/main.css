@@ -37,8 +37,8 @@
   transition: 0.5s;
 }
 .divcontent:hover {
-  padding-bottom: 10px;
-  z-index: 0;
+  box-shadow: 0 0 10px #000;
+  z-index: 1;
 };
 .space-1 {
   grid-column-start: 0;
@@ -74,6 +74,7 @@
      padding: 0px 0px;
      transition: 0.2s;
      background-color: #FFF;
+     z-index: 100;
 }
 .nav-text {
      top: 52%;
