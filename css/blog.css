@@ -46,6 +46,6 @@
         grid-template-rows: 200px auto;
     }
     .blog-history {
-        display: none;
+        display: none
     }
 }
