@@ -17,13 +17,12 @@
      padding: 0;
 }
 .mainheader {
-  padding: auto;
-  padding-top: 0px;
-  height: var(--main-div-padding);
+  padding: 0px;
   float: left;
   display: inline;
 }
-/*the content class*/
+
+/*the grid class*/
 .sidebyside {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -35,7 +34,12 @@
   height: var(--main-div-padding);
   float: left;
   display: inline;
+  transition: 0.5s;
 }
+.divcontent:hover {
+  padding-bottom: 10px;
+  z-index: 0;
+};
 .space-1 {
   grid-column-start: 0;
   grid-column-end: span 1;
@@ -64,7 +68,6 @@
      float: left;
 }
 /*Navbar css*/
-
 .navbar {
      height: 50px;
      margin: 0;
@@ -72,8 +75,7 @@
      transition: 0.2s;
      background-color: #FFF;
 }
-
- .nav-text {
+.nav-text {
      top: 52%;
      left: 50%;
      transform: translate(-50%, -50%);
@@ -82,9 +84,26 @@
      font-family: Arial;
      position: relative;
 }
-
+/*CSS for the Slideshow*/
 .slide {
   display: none;
+  height: 500px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.slide:hover {
+  background-position: 95% center;
+  background-size: 50%;
+  transition: 1s;
+  cursor: hand;
+}
+.slide p {
+  color: transparent;
+  transition: 0.5s;
+}
+.slide:hover p {
+  color: black;
 }
 .fade {
   transition: 0.5s;
@@ -92,10 +111,10 @@
 .next, .prev {
   text-decoration: none;
   margin-top: 15%;
-  padding: 10px;
   border-radius: 3px;
   transition: 0.5s;
   color: #000;
+  padding: 50px 10px;
 }
 .next {
   float: right;
@@ -110,6 +129,7 @@
 .next:hover, .prev:hover {
   background-color: #FFFFFFAA;
 }
+
 /*IDs*/
 #blog {
   background-color: #EEE;
@@ -137,13 +157,13 @@
 }
 .person {
      float: left;
-     margin: 30px;
+     margin: 10px;
 }
 #logo {
      height: 50px;
      display: inline-block;
 }
- #logo-container {
+#logo-container {
      text-align: center;
      float: left;
 }
@@ -168,7 +188,7 @@
          transition: background-color 0.2s;
          border-radius: 10px;
     }
-     
+
      #navbar-dropdown-btn:hover {
          background-color: #F00;
     }
@@ -177,7 +197,7 @@
     }
      #navbar-dropdown-btn:enabled {
     }
-     
+
      #navbar-btns {
          z-index: 10000;
          width: 100%;
