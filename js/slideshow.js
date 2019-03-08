@@ -3,15 +3,13 @@ updateSlides(slideNumber);
 function nextSlide(){
   slideNumber = slideNumber + 1;
   updateSlides(slideNumber);
-  alert("Works!");
 };
 function prevSlide(){
   slideNumber = slideNumber - 1;
   updateSlides(slideNumber);
-  alert("Works!");
 };
 function updateSlides(n){
-  var slides = document.getElementById('slide');
+  var slides = document.getElementsByClassName('slide');
   if(n<1){
     slideNumber = slides.length;
   }
@@ -20,6 +18,8 @@ function updateSlides(n){
   }
   for(var i = 0; i < slides.length; i++){
     slides[i].style.display = "none";
+    slides[slideNumber-1].style.opacity = "0%";
   }
-  slides[slideNumber-1].style.display = block;
+  slides[slideNumber-1].style.display = "block";
+  slides[slideNumber-1].style.opacity = "100%";
 };
