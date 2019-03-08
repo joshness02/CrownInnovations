@@ -140,8 +140,9 @@
      margin: 30px;
 }
 #logo {
-     height: 50px;
+     height: 90%;
      display: inline-block;
+    margin-left: 20px;
 }
  #logo-container {
      text-align: center;
@@ -155,75 +156,62 @@
          top: 0px;
          width: 100%;
          height: 50px;
-         z-index: 1000;
+         z-index: 1;
+         background-color: white;
     }
      #navbar-dropdown-btn{
-         /*
          display: inline-block;
          background-color: #F00;
          width: 40px;
          height: 40px;
-         margin: 5px 10px 0 0;
+         margin: 5px 20px 0 0;
          padding: 0;
          float: right;
-         background-color: #FFF;
-         transition: background 0.2s;*/
-         border: solid 1px black;
-         margin: 0px 30px 0 0;
-    height: 50px;
-    width: 50px;
-        float: right;
-    box-sizing: border-box;
-    line-height: 50px;
-    display: inline-block;
-         background-color: red;
-
-    &:before, &:after {
-        transform: rotate(-45deg);
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -5;
-        margin-left: -25;
-        display: block;
-        height: 10px;
-        width: 50px;
-        background-color: #fff;
-        transition: all 0.25s ease-out;
+         background-color: transparent;
+         transition: background-color 0.2s;
+         border-radius: 2px;
     }
-
-    &:after {
-        transform: rotate(-135deg);
-    }
-
-    &:hover {
-        &:before, &:after {
-            transform: rotate(0deg) translate(0px, 0px);
-        }
-    }
-    }
-     /*
-     #navbar-dropdown-btn:hover {
+     
+     #navbar-dropdown-btn::before, #navbar-dropdown-btn::after{
          background-color: #F00;
-    }
-     #navbar-dropdown-btn:active {
-         background-color: #A00;
-    }*/
+         display: block;
+         content: "";
+         width: 40px;
+         height: 5px;
+         position: absolute;
+         transition: transform 0.3s;
+         
+     }
+     #navbar-dropdown-btn::before {
+         transform: translate(0, 7px);
+     }
+     #navbar-dropdown-btn::after {
+         transform: translate(0, 26px);
+     }
+     #navbar-dropdown-btn.active::before {
+         transform: translate(0, 18px) rotate(45deg);
+     }
+     #navbar-dropdown-btn.active::after {
+         transform: translate(0, 18px) rotate(135deg);
+     }
+     
      
      #navbar-btns {
          width: 100%;
-         transition: 0.3s;
-         height: 0px;
-         opacity: 0;
-         float: right;
+         transition: 0.5s ease-in;
+         top: -500px;
+         opacity: 1;
+         position: relative;
+         z-index: -1;
     }
      #navbar-btns.active{
+         transition: 0.5s ease-out;
          opacity: 1;
          display: block;
          background-color: red;
          width: 100%;
          height: 100%;
+         top: 0px;
     }
 
 
