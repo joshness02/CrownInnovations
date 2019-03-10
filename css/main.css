@@ -1,226 +1,346 @@
 /*Main css*/
-body, html {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(200, 200, 200);
-    margin-top: 25px;
+ body, html {
+     margin: 0;
+     padding: 0;
+     background-color: #CCC;
+     margin-top: 25px;
 }
-
-:root {
-  --main-div-padding: 500px;
-  --main-left-side-size: 60%;
-  --main-left-side-size-2: 40%;
-  --main-logo-width: 50px;
-  --navbar-height: 50px;
+ :root {
+     --main-div-padding: 500px;
+     --main-left-side-size: 60%;
+     --main-left-side-size-2: 40%;
+     --main-logo-width: 50px;
+     --navbar-height: 50px;
 }
-
 /*Logo css*/
 #logo {
-  padding: 0;
+     padding: 0;
 }
-
 .mainheader {
-  padding: 0;
-  width: 100%;
-  height: 50%;
-  float: right;
+  padding: 0px;
+  margin: 0;
+  float: left;
+  display: inline;
 }
 
-/*content that fills up a large the div it is in*/
-.largecontent {
+/*the grid class*/
+.sidebyside {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+}
+.divcontent {
   padding: auto;
   padding-top: 0px;
   padding-left: 2%;
   height: var(--main-div-padding);
-  width: calc(var(--main-left-side-size) - 2%);
   float: left;
+  display: inline;
+  transition: 0.5s;
 }
-
-/*content that fills up a small region the div it is in*/
-.smallcontent {
-  padding: auto;
-  padding-left: 2%;
-  width: calc(98% - var(--main-left-side-size));
-  padding-top: 0px;
-  height: var(--main-div-padding);
-  float: left;
+.addshadow:hover {
+  box-shadow: 0 0 5px #000;
+  z-index: 1;
+  cursor: hand;
+  border-radius: 5px;
 }
-
-/*content that fills up half the div it is in*/
-.halfcontent {
-  padding: auto;
-  padding-left: 2%;
-  width: 48%;
-  padding-top: 0px;
-  height: var(--main-div-padding);
-  float: left;
+.space-1 {
+  grid-column-start: 0;
+  grid-column-end: span 1;
 }
-
-.footer {
-  padding: 0;
-  width: 100%;
-  height: 35%;
-  background-color: #FFF;
-  float: left;
+.space-2 {
+  grid-column-start: 0;
+  grid-column-end: span 2;
 }
-
+.space-3 {
+  grid-column-start: 0;
+  grid-column-end: span 3;
+}
+.space-4 {
+  grid-column-start: 0;
+  grid-column-end: span 4;
+}
+.space-5 {
+  grid-column-start: 0;
+  grid-column-end: span 5;
+}
+ .footer {
+     padding: 0;
+     width: 100%;
+     height: 35%;
+     background-color: #FFF;
+     float: left;
+}
 /*Navbar css*/
 .navbar {
-  height: 25px;
-  margin: 0;
-  padding: 0px 0px;
-  transition: 0.2s;
-  background-color: #FFF;
+     height: 50px;
+     margin: 0;
+     padding: 0px 0px;
+     transition: 0.2s;
+     background-color: #FFF;
+     z-index: 100;
 }
-
-.nav-item {
-  margin: 0px 0px;
-}
-
-.nav-button {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  color: black;
-  text-align: center;
-  position: relative;
-  display: block;
-  transition: background 0.3s;
-}
-
 .nav-text {
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+     top: 52%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     margin: 0;
+     font-size: 110%;
+     font-family: Arial;
+     position: relative;
+}
+/*CSS for the Slideshow*/
+.slide {
+  display: none;
+  height: 500px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 1s;
   margin: 0;
-  font-size: 110%;
-  font-family: Arial;
+  padding: 0px;
 }
-
-.nav-button:hover {
-  cursor: pointer;
-  background-color: #F00;
-  color: #FFF;
+.slide:hover {
+  background-position: 95% center;
+  background-size: 50%;
+  cursor: hand;
 }
-
-.nav-button:active {
-  background-color: rgb(200, 0, 0);
+.slide p {
+  color: transparent;
+  transition: 0.5s;
+}
+.slide:hover p {
+  color: black;
+}
+#fade{
+}
+.next, .prev {
+  text-decoration: none;
+  margin-top: 15%;
+  border-radius: 3px;
+  transition: 0.5s;
+  color: #000;
+  padding: 50px 10px;
+}
+.next {
+  float: right;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.prev {
+  float: left;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.next:hover, .prev:hover {
+  background-color: #FFFFFFAA;
 }
 
 /*IDs*/
-#blog {}
-
-#products {}
-
-#about {}
-
-#resources {}
-
-#slideshow {
-  background-color: rgb(150, 150, 150);
+#blog {
+  background-color: #FFF;
 }
-
+#products {
+  background-color: #EEE;
+}
+#about {
+  background-color: #DDD;
+}
+#resources {
+  background-color: #DDD;
+}
+#slideshow {
+     background-color: rgb(150, 150, 150);
+     margin: 0;
+}
 #contactinfo {
 }
-
 #mentors {
-  background-color: rgb(190, 190, 190);
+     background-color: rgb(190, 190, 190);
 }
-
 #thanks {
-  float: left;
-  margin-left: 5%;
+     float: left;
+     margin-left: 5%;
 }
-
 .person {
-  float: left;
-  margin: 30px;
+     float: left;
+     margin: 10px;
 }
-
+#logo {
+     height: 90%;
+     display: inline-block;
+    margin-left: 20px;
+}
+#logo-container {
+     text-align: center;
+     float: left;
+}
 
 /*@media css*/
-@media only screen and (max-width: 720px) {
-  .nav-item {
-    width: 100%;
-    display: inline;
-    height: 50px;
-    z-index: 100;
-    position: static;
-  }
+ @media only screen and (max-width: 720px) {
+     .navbar {
+         position: fixed;
+         top: 0px;
+         width: 100%;
+         height: 50px;
+         z-index: 1;
+         background-color: white;
+    }
+     #navbar-dropdown-btn{
+         display: inline-block;
+         background-color: #F00;
+         width: 40px;
+         height: 40px;
+         margin: 5px 20px 0 0;
+         padding: 0;
+         float: right;
+         background-color: transparent;
+         transition: background-color 0.2s;
+         border-radius: 2px;
+    }
 
-  .nav-button {}
+     #navbar-dropdown-btn::before, #navbar-dropdown-btn::after{
+         background-color: #F00;
+         display: block;
+         content: "";
+         width: 40px;
+         height: 5px;
+         position: absolute;
+         transition: transform 0.3s;
 
-  .navbar {
-    width: 100%;
-    position: fixed;
-    float: right;
-  }
+     }
+     #navbar-dropdown-btn::before {
+         transform: translate(0, 7px);
+     }
+     #navbar-dropdown-btn::after {
+         transform: translate(0, 26px);
+     }
+     #navbar-dropdown-btn.active::before {
+         transform: translate(0, 18px) rotate(45deg);
+     }
+     #navbar-dropdown-btn.active::after {
+         transform: translate(0, 18px) rotate(135deg);
+     }
 
-  #logo {
-    height: 50px;
-    display: inline-block;
-  }
 
-  #logo-container {
-    text-align: center;
-    float: left;
-  }
+     #navbar-btns {
+         width: 100%;
+         transition: 0.5s ease-in;
+         top: -500px;
+         opacity: 1;
+         position: relative;
+         z-index: -1;
+    }
+     #navbar-btns.active{
+         transition: 0.5s ease-out;
+         opacity: 1;
+         display: block;
+         background-color: red;
+         width: 100%;
+         height: 100%;
+         top: 0px;
+    }
+
+
+     .nav-item {
+         margin: 0px 0px;
+         background-color: #FFF;
+    }
+     .nav-button {
+         margin: 0;
+         width: 100%;
+         height: 100%;
+         border: none;
+         color: black;
+         text-align: center;
+         position: relative;
+         display: block;
+         transition: background 0.3s;
+         text-decoration: none;
+    }
+     .nav-button:hover {
+         cursor: pointer;
+         background-color: #F00;
+         color: #FFF;
+    }
+     .nav-button:active {
+         background-color: rgb(200, 0, 0);
+    }
 }
+ @media only screen and (min-width: 720px) {
+     .menu-item {
+         width: 100%;
+         height: 100%;
+     }
+     .nav-item {
+         height: 100%;
+         width: 100%;
+     }
+     .nav-button {
+         display: block;
+         background-color: red;
+         margin: 0;
+         height: 100%;
+         width: 100%;
+         border: none;
+         color: black;
+         text-align: center;
+         transition: background 0.3s;
+         background-color: #FFF;
+         text-decoration: none;
+    }
+     .nav-button:hover {
+         cursor: pointer;
+         background-color: #F00;
+         color: #FFF;
+    }
+     .nav-button:active {
+         background-color: rgb(200, 0, 0);
+    }
+     #navbar-dropdown-btn{
+         opacity: 0;
+    }
+     #navbar-btns {
+         display: grid;
+         grid-template-columns: repeat(6, 1fr);
+         height: 50px;
+         width: 100%;
+         background-color: #FFF;
 
-@media only screen and (min-width: 720px) {
-  #logo {
-    height: 95%;
-  }
-
-  .nav-item {
-    margin: 0;
-    float: right;
-    height: 100%;
-  }
-
-  .nav-button {
-    margin: 0px;
-    background-color: rgba(200, 180, 180, 0);
-  }
-
-  .navbar {
-    display: grid;
-    grid-template-columns: 90px repeat(6, 1fr) 10px;
-    height: 50px;
-    padding-left: 10px;
-      padding-right: 10px;
-      position: fixed;
-      width: 100%;
-      top: 0px;
-  }
+     }
+     .navbar {
+         display: grid;
+         grid-template-columns: 90px 0px 1fr 20px;
+         height: 50px;
+         padding-left: 10px;
+         padding-right: 10px;
+         position: fixed;
+         width: 100%;
+         top: 0px;
+         box-shadow: 0 0 3px black;
+    }
 }
-
-/*
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+/* .dropbtn {
+     background-color: #4CAF50;
+     color: white;
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
 }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+ .dropdown {
+     position: relative;
+     display: inline-block;
 }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: red;
-    min-width: 160px;
-    z-index: 10;
-    height: auto;
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: red;
+     min-width: 160px;
+     z-index: 10;
+     height: auto;
 }
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}*/
+ .dropdown:hover .dropdown-content {
+     display: block;
+}
+*/

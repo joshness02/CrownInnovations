@@ -11,11 +11,17 @@
     <body>
         <div ng-app="CrownInnovationsApp">
             <div class="navbar" ng-controller="MenuController">
-                <img id="logo" src="imgs/logo.png" alt="Logo">
-                <div class="nav-item" ng-repeat="item in items">
-                    <menu-item info="item"></menu-item>
-                </div>
-            </div>
+      <img id="logo" src="imgs/logo.png" alt="Logo">
+      <a id="navbar-dropdown-btn"></a>
+
+      <div id="navbar-btns">
+        <div class="nav-item" ng-repeat="item in items">
+          <menu-item info="item"></menu-item>
+        </div>
+      </div>
+
+      <script src="js/navbar.js"></script>
+    </div>
 
             <div class="blog">
 
