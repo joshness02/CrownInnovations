@@ -9,16 +9,16 @@ app.controller("MenuController", ['$scope', function($scope){
             link: 'about.html',
         },
         {
+            title: 'Products',
+            link: 'products.html',
+        },
+        {
             title: 'Blog',
             link: 'blog.html',
         },
         {
             title: 'Contact',
             link: 'contact.html',
-        },
-        {
-            title: 'Products',
-            link: 'products.html',
         },
         {
             title: 'Resources',
