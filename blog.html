@@ -7,6 +7,8 @@
         <title>Crown Innovations | Blog</title>
         <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width">
+
     </head>
     <body>
         <div ng-app="CrownInnovationsApp">
@@ -24,7 +26,7 @@
     </div>
 
             <div class="blog">
-
+<!--
                 <div class="blog-history">
                     <ul>
                         <li>Hi</li>
@@ -53,16 +55,13 @@
                         <li>Hi</li>
                     </ul>
                 </div>
-
-                <div class="blog-container">
-
-                    <div class = "blog-article-container" ng-controller="BlogController">
-                        <div class = "blog-article" ng-repeat="article in articles">
-                            <blog-article class="blog-article" article="article"></blog-article>
+-->
+                <div class = "blog-article-container" ng-controller="BlogController">
+                        <div class="blog-article" ng-repeat="article in articles">
+                            <blog-article  article="article"></blog-article>
                         </div>
                     </div>
 
-                </div>
                 </div>
 
             <script src="js/app.js"></script>

@@ -1,11 +1,9 @@
 
-<div class = "blog-article">
-    <div class="blog-header">
-        <h3 class="blog-title">{{article.title }}</h3>
-        <p class="blog-date">{{ article.date | date}}</p>
-    </div>
-    <object class="blog-content" data="{{ article.content }}">
-        Sorry, we were unable to load the blog.
-        This problem may occur if you are not using Chrome, Safari, Firefox, Internet Explorer or Opera.
-    </object>
+<div class="blog-header">
+    <h3 class="blog-title">{{article.title }}</h3>
+    <p class="blog-date">{{ article.date | date}}</p>
 </div>
+<object class="blog-content" data="{{ article.content }}">
+    Sorry, we were unable to load the blog.
+    This problem may occur if you are not using Chrome, Safari, Firefox, Internet Explorer or Opera.
+</object>
