@@ -12,10 +12,6 @@
      --main-logo-width: 50px;
      --navbar-height: 50px;
 }
-/*Logo css*/
-#logo {
-     padding: 0;
-}
 .mainheader {
   padding: auto;
   padding-top: 0px;
@@ -142,7 +138,7 @@
 #logo {
      height: 90%;
      display: inline-block;
-    margin-left: 20px;
+    margin-left: 10px;
 }
  #logo-container {
      text-align: center;
