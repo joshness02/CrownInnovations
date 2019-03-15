@@ -1,18 +1,18 @@
-(function(){
+(function () {
     var navbtn = document.getElementById("navbar-dropdown-btn");
     var navmenu = document.getElementById("navbar-btns");
-    navbtn.addEventListener("click", function(event){
+    navbtn.addEventListener("click", function (event) {
         console.log("Clicked");
-        if(navmenu.classList){
+        if (navmenu.classList) {
             navmenu.classList.toggle("active");
             navbtn.classList.toggle("active");
-        }else{
+        } else {
             var classes = navmenu.className.split(" ");
             var i = classes.indexOf("active");
-            
-            if(i >= 0){
+
+            if (i >= 0) {
                 classes.splice(i, 1);
-            }else{
+            } else {
                 classes.push("active");
                 navmenu.className = classes.join(" ");
             }

@@ -1,4 +1,4 @@
-app.controller("BlogController", ['$scope', function($scope){
+app.controller("BlogController", ['$scope', function ($scope) {
     $scope.articles = [
         {
             title: "Welcome to Crown Innovations",
@@ -36,8 +36,8 @@ app.controller("BlogController", ['$scope', function($scope){
             content: "blog1.html",
         },
     ];
-    for(var i = 0; i < $scope.articles.length; i++){
+    for (var i = 0; i < $scope.articles.length; i++) {
         var article = $scope.articles[i];
-        $scope.articles[i].content = "blogContent/"+article.content;
+        $scope.articles[i].content = "blogContent/" + article.content;
     }
 }]);
