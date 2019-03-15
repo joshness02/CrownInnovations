@@ -2,123 +2,123 @@
 <html>
 
 <head>
-  <!--Include Angular.js-->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-  <!--Include CSS-->
-  <link href="css/main.css" type="text/css" rel="stylesheet">
-  <!--Website Title-->
-  <title>Crown Innovations | About</title>
-  <!--Favicon-->
-  <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
-        <meta name="viewport" content="width=device-width">
+    <!--Include Angular.js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <!--Include CSS-->
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <!--Website Title-->
+    <title>Crown Innovations | About</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
-  <div ng-app="CrownInnovationsApp">
-    <div class="navbar" ng-controller="MenuController">
-      <img id="logo" src="imgs/logo.png" alt="Logo">
-      <a id="navbar-dropdown-btn"></a>
+    <div ng-app="CrownInnovationsApp">
+        <div class="navbar" ng-controller="MenuController">
+            <img id="logo" src="imgs/logo.png" alt="Logo">
+            <a id="navbar-dropdown-btn"></a>
 
-      <div id="navbar-btns">
-        <div class="nav-item" ng-repeat="item in items">
-          <menu-item info="item"></menu-item>
-        </div>
-      </div>
+            <div id="navbar-btns">
+                <div class="nav-item" ng-repeat="item in items">
+                    <menu-item info="item"></menu-item>
+                </div>
+            </div>
 
-      <script src="js/navbar.js"></script>
+            <script src="js/navbar.js"></script>
+        </div>
+        <!--Side By Side content-->
+        <div class="sidebyside">
+            <!--Main Header for the About Page-->
+            <div class="space-3 mainheader" id="aboutus">
+                <h1>About Us</h1>
+                <!--A scentence about us-->
+                <p style="float: left; width:50%; padding-left: 10px;">We started the idea in 2016 as a project of the Jasper County 4H Gearbots FLL team, and we were able to go onto 2 world competitions with it. After the FLL season was over, we decided to keep going with the project. We now have a full patent and are producing it. We created the Calf Pacifier because bottle calves don’t get enough sucking time from the bottle. After a bottle calf is done eating, it will look for things to suck on to help it feel full. If a calf sucks on random objects or other calves, that is called cross-sucking. The result could be the calves getting sick. Studies have shown that just 10 minutes of extra sucking time after feeding reduces cross-sucking by 75%.</p>
+                <img src="/imgs/team.jpg" style="margin-left: 50px; height:50%;">
+            </div>
+            <!--A DIV teling about us-->
+            <div class="space-2 divcontent" id="team">
+                <h1>Our Team</h1>
+                <!--A div talking about our President-->
+                <div class="person">
+                    <h2>Damon</h2>
+                    <p>President</p><br>
+                    <p>About<br>Damon</p>
+                </div>
+                <!--A div talking about our Vice President-->
+                <div class="person">
+                    <h2>Joshua</h2>
+                    <p>Vice President</p><br>
+                    <p>About<br>Joshua<p>
+                </div>
+                <!--A div talking about our Treasurer-->
+                <div class="person">
+                    <h2>Carlee</h2>
+                    <p>Treasurer</p><br>
+                    <p>About<br>Carlee</p>
+                </div>
+                <!--A div talking about our Secratary-->
+                <div class="person">
+                    <h2>Holly</h2>
+                    <p>Secratary</p><br>
+                    <p>About<br>Holly</p>
+                </div>
+                <!--A div talking about our Media Guy-->
+                <div class="person">
+                    <h2>Caleb</h2>
+                    <p>Reporter<br>Designer</p>
+                    <p>About<br>Caleb</p>
+                </div>
+            </div>
+            <!--A DIV talking about our mentors-->
+            <div class="space-1 divcontent" id="mentors">
+                <h2>Special Thanks To...</h2>
+                <!--DIVs talking about our mentors-->
+                <div class="person">
+                    <h4>Cheryl Ness</h4>
+                    <p></p>
+                </div>
+                <div class="person">
+                    <h4>Linda Reynolds</h4>
+                    <p></p>
+                </div>
+                <div class="person">
+                    <h4>Beth Zahurones</h4>
+                    <p></p>
+                </div>
+                <div class="person">
+                    <h4>Tim Zarley</h4>
+                    <p></p>
+                </div>
+                <div class="person">
+                    <h4>Drew Manaat</h4>
+                    <p></p>
+                </div>
+                <div class="person">
+                    <h4>Brad Dodds</h4>
+                    <p></p>
+                </div>
+                <h2 id="thanks">for Mentoring, Supporting, and Helping Us.</h2>
+            </div>
+        </div>
+        <!--Footer DIV-->
+        <div class="footer">
+            <h1>Footer</h1>
+            <ul>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <h3>Have questions? <a href="contact.html">Contact Us!</a></h3>
+        </div>
+        <!--Include Javascript-->
+        <script src="js/app.js"></script>
+        <script src="js/controllers/MenuController.js"></script>
+        <script src="js/directives/MenuDirective.js"></script>
     </div>
-    <!--Side By Side content-->
-    <div class="sidebyside">
-      <!--Main Header for the About Page-->
-      <div class="space-3 mainheader" id="aboutus">
-        <h1>About Us</h1>
-        <!--A scentence about us-->
-        <p style="float: left; width:50%; padding-left: 10px;">We started the idea in 2016 as a project of the Jasper County 4H Gearbots FLL team, and we were able to go onto 2 world competitions with it. After the FLL season was over, we decided to keep going with the project. We now have a full patent and are producing it. We created the Calf Pacifier because bottle calves don’t get enough sucking time from the bottle. After a bottle calf is done eating, it will look for things to suck on to help it feel full. If a calf sucks on random objects or other calves, that is called cross-sucking. The result could be the calves getting sick.  Studies have shown that just 10 minutes of extra sucking time after feeding reduces cross-sucking by 75%.</p>
-        <img src="/imgs/team.jpg" style="margin-left: 50px; height:50%;">
-      </div>
-      <!--A DIV teling about us-->
-      <div class="space-2 divcontent" id="team">
-        <h1>Our Team</h1>
-        <!--A div talking about our President-->
-        <div class="person">
-          <h2>Damon</h2>
-          <p>President</p><br>
-          <p>About<br>Damon</p>
-        </div>
-        <!--A div talking about our Vice President-->
-        <div class="person">
-          <h2>Joshua</h2>
-          <p>Vice President</p><br>
-          <p>About<br>Joshua<p>
-        </div>
-        <!--A div talking about our Treasurer-->
-        <div class="person">
-          <h2>Carlee</h2>
-          <p>Treasurer</p><br>
-          <p>About<br>Carlee</p>
-        </div>
-        <!--A div talking about our Secratary-->
-        <div class="person">
-          <h2>Holly</h2>
-          <p>Secratary</p><br>
-          <p>About<br>Holly</p>
-        </div>
-        <!--A div talking about our Media Guy-->
-        <div class="person">
-          <h2>Caleb</h2>
-          <p>Reporter<br>Designer</p>
-          <p>About<br>Caleb</p>
-        </div>
-      </div>
-      <!--A DIV talking about our mentors-->
-      <div class="space-1 divcontent" id="mentors">
-        <h2>Special Thanks To...</h2>
-        <!--DIVs talking about our mentors-->
-        <div class="person">
-          <h4>Cheryl Ness</h4>
-          <p></p>
-        </div>
-        <div class="person">
-          <h4>Linda Reynolds</h4>
-          <p></p>
-        </div>
-        <div class="person">
-          <h4>Beth Zahurones</h4>
-          <p></p>
-        </div>
-        <div class="person">
-          <h4>Tim Zarley</h4>
-          <p></p>
-        </div>
-        <div class="person">
-          <h4>Drew Manaat</h4>
-          <p></p>
-        </div>
-        <div class="person">
-          <h4>Brad Dodds</h4>
-          <p></p>
-        </div>
-        <h2 id="thanks">for Mentoring, Supporting, and Helping Us.</h2>
-      </div>
-    </div>
-    <!--Footer DIV-->
-    <div class="footer">
-      <h1>Footer</h1>
-      <ul>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-      <h3>Have questions? <a href="contact.html">Contact Us!</a></h3>
-    </div>
-    <!--Include Javascript-->
-    <script src="js/app.js"></script>
-    <script src="js/controllers/MenuController.js"></script>
-    <script src="js/directives/MenuDirective.js"></script>
-  </div>
 </body>
 
 </html>
