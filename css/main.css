@@ -37,6 +37,7 @@
   float: left;
   display: inline;
   transition: 0.5s;
+  z-index: 0;
 }
 .addshadow:hover {
   box-shadow: 0 0 5px #000;
@@ -271,6 +272,27 @@
     }
      .nav-button:active {
          background-color: rgb(200, 0, 0);
+    }
+
+    .space-1 {
+      grid-column-start: 0;
+      grid-column-end: span 5;
+    }
+    .space-2 {
+      grid-column-start: 0;
+      grid-column-end: span 5;
+    }
+    .space-3 {
+      grid-column-start: 0;
+      grid-column-end: span 5;
+    }
+    .space-4 {
+      grid-column-start: 0;
+      grid-column-end: span 5;
+    }
+    .space-5 {
+      grid-column-start: 0;
+      grid-column-end: span 5;
     }
 }
  @media only screen and (min-width: 720px) {
