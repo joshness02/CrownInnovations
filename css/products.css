@@ -11,7 +11,7 @@
     background-color: #FFF;
     grid-column-start: 0;
     grid-column-end: span 3;
-    height: 200px;
+    min-height: 200px;
     text-align: center;
     
 }
@@ -45,16 +45,33 @@
     height: 50%;
     text-align: center;
     padding: 10px;
+    width: 100%;
 }
 .product-description-text {
     position: relative;
-    width: 50%;
     min-width: 200px;
 }
 
+.product:hover {
+    cursor: hand;
+}
 .product:hover .product-description {
     opacity: 1;
 }
+.product-popup {
+    display: none;
+}
+.product-popup.show {
+    display:block;
+    position: fixed;
+    top:100px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    background-color: red;
+    z-index: 1;
+}
+
 
 @media only screen and (max-width: 768px) {
     .products-container {
