@@ -1,9 +1,14 @@
 <div class="product">
     <h3 class="product-name">{{product.name}}</h3>
-    <img src="{{product.img}}">
+    <img src="{{product.imgs}}[0]" target="_parent">
     <div class="product-description">
         <p class="product-description-text">
             {{product.description}}
         </p>
+    </div>
+    <div class="product-popup">
+        <div class="popup-content">
+            <p>Some text</p>
+        </div>
     </div>
 </div>
