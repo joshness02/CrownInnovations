@@ -1,33 +1,32 @@
 /*Main css*/
 body,
 html {
-    margin: 0;
-    padding: 0;
-    background-color: #CCC;
-    margin-top: 25px;
-
+  margin: 0;
+  padding: 0;
+  background-color: #CCC;
+  margin-top: 25px;
 }
 
 :root {
-    --main-div-padding: 500px;
-    --main-left-side-size: 60%;
-    --main-left-side-size-2: 40%;
-    --main-logo-width: 50px;
-    --navbar-height: 50px;
+  --main-div-padding: 500px;
+  --main-left-side-size: 60%;
+  --main-left-side-size-2: 40%;
+  --main-logo-width: 50px;
+  --navbar-height: 50px;
 }
 
 .mainheader {
-    padding: 0px;
-    margin: 0;
-    float: left;
-    display: inline;
+  padding: 0px;
+  margin: 0;
+  float: left;
+  display: inline;
 }
 
 /*the grid class*/
 .sidebyside {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
 }
 
 .divcontent {
@@ -42,368 +41,367 @@ html {
 }
 
 .addshadow:hover {
-    box-shadow: 0 0 5px #000;
-    z-index: 1;
-    cursor: hand;
-    border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+  z-index: 1;
+  cursor: hand;
+  border-radius: 5px;
 }
 
 .space-1 {
-    grid-column-start: 0;
-    grid-column-end: span 1;
+  grid-column-start: 0;
+  grid-column-end: span 1;
 }
 
 .space-2 {
-    grid-column-start: 0;
-    grid-column-end: span 2;
+  grid-column-start: 0;
+  grid-column-end: span 2;
 }
 
 .space-3 {
-    grid-column-start: 0;
-    grid-column-end: span 3;
+  grid-column-start: 0;
+  grid-column-end: span 3;
 }
 
 .space-4 {
-    grid-column-start: 0;
-    grid-column-end: span 4;
+  grid-column-start: 0;
+  grid-column-end: span 4;
 }
 
 .space-5 {
-    grid-column-start: 0;
-    grid-column-end: span 5;
+  grid-column-start: 0;
+  grid-column-end: span 5;
 }
 
 .footer {
-    padding: 0;
-    width: 100%;
-    height: 35%;
-    background-color: #FFF;
-    float: left;
+  padding: 0;
+  width: 100%;
+  height: 35%;
+  background-color: #FFF;
+  float: left;
 }
 
 /*Navbar css*/
 .navbar {
-    height: 50px;
-    margin: 0;
-    padding: 0px 0px;
-    transition: 0.2s;
-    background-color: #FFF;
-    z-index: 100;
+  height: 50px;
+  margin: 0;
+  padding: 0px 0px;
+  transition: 0.2s;
+  background-color: #FFF;
+  z-index: 100;
 }
 
 .nav-text {
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    font-size: 110%;
-    font-family: Arial;
-    position: relative;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 110%;
+  font-family: Arial;
+  position: relative;
 }
 
 /*CSS for the Slideshow*/
 .slide {
-    height: 500px;
-    display: none;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    transition: 1s;
-    margin: 0;
-    padding: 0;
+  height: inherit;
+  display: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 90%;
+  transition: 1s;
+  margin: 0;
+  padding: 0;
 }
 
 .slide:hover {
-    background-position: 250px;
-    cursor: hand;
+  background-position: right;
+  background-size: 80%;
+  cursor: hand;
 }
 
 .slide p {
-    color: transparent;
-    transition: 0.5s;
+  color: transparent;
+  transition: 0.5s;
 }
 
 .slide:hover p {
-    color: black;
+  color: black;
 }
-
-#fade {}
 
 .next,
 .prev {
-    position: relative;
-    text-decoration: none;
-    margin-top: 30%;
-    border-radius: 3px;
-    transition: 0.5s;
-    color: #000;
-    padding: 50px 00px;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: 0.5s;
+  color: #000;
+  padding: 50px 10px;
+  margin-top: 10%;
 }
 
 .next {
-    float: right;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  float: right;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .prev {
-    float: left;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  float: left;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .next:hover,
 .prev:hover {
-    background-color: #FFFFFFAA;
+  background-color: #FFFFFFAA;
+  cursor: hand;
 }
 
 #slideshow {
-    padding: 0;
-    margin: 0;
-    height: 500px;
+  padding: 0;
+  margin: 0;
+  height: 510px;
 }
 
 /*IDs*/
 #blog {
-    background-color: #FFF;
+  background-color: #FFF;
 }
 
 #products {
-    background-color: #EEE;
+  background-color: #EEE;
 }
 
 #about {
-    background-color: #DDD;
+  background-color: #DDD;
 }
 
 #resources {
-    background-color: #DDD;
+  background-color: #DDD;
 }
 
 #slideshow {
-    background-color: rgb(150, 150, 150);
-    margin: 0;
-    padding: 0;
+  background-color: rgb(150, 150, 150);
+  margin: 0;
+  padding: 0;
 }
 
 #contactinfo {}
 
 #mentors {
-    background-color: rgb(190, 190, 190);
+  background-color: rgb(190, 190, 190);
 }
 
 #thanks {
-    float: left;
-    margin-left: 5%;
+  float: left;
+  margin-left: 5%;
 }
 
 .person {
-    float: left;
-    margin: 10px;
+  float: left;
+  margin: 10px;
 }
 
 #logo {
-    height: 90%;
-    display: inline-block;
-    margin-left: 10px;
+  height: 90%;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 #logo-container {
-    text-align: center;
-    float: left;
+  text-align: center;
+  float: left;
 }
 
 #aboutus {
-    background-color: #FFF;
-    height: auto;
-    padding-bottom: 50px;
-    font-size: 20px;
-    padding-left: 10px;
+  background-color: #FFF;
+  height: auto;
+  padding-bottom: 50px;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 /*@media css*/
 /*Portrait*/
 @media only screen and (max-width: 768px) {
-    .navbar {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        height: 50px;
-        z-index: 1;
-        background-color: white;
-    }
+  .navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    background-color: white;
+  }
 
-    #navbar-dropdown-btn {
-        display: inline-block;
-        background-color: #F00;
-        width: 40px;
-        height: 40px;
-        margin: 5px 20px 0 0;
-        padding: 0;
-        float: right;
-        background-color: transparent;
-        transition: background-color 0.2s;
-        border-radius: 2px;
-    }
+  #navbar-dropdown-btn {
+    display: inline-block;
+    background-color: #F00;
+    width: 40px;
+    height: 40px;
+    margin: 5px 20px 0 0;
+    padding: 0;
+    float: right;
+    background-color: transparent;
+    transition: background-color 0.2s;
+    border-radius: 2px;
+  }
 
-    #navbar-dropdown-btn::before,
-    #navbar-dropdown-btn::after {
-        background-color: #F00;
-        display: block;
-        content: "";
-        width: 40px;
-        height: 5px;
-        position: absolute;
-        transition: transform 0.3s;
+  #navbar-dropdown-btn::before,
+  #navbar-dropdown-btn::after {
+    background-color: #F00;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    transition: transform 0.3s;
+  }
 
-    }
+  #navbar-dropdown-btn::before {
+    transform: translate(0, 7px);
+  }
 
-    #navbar-dropdown-btn::before {
-        transform: translate(0, 7px);
-    }
+  #navbar-dropdown-btn::after {
+    transform: translate(0, 26px);
+  }
 
-    #navbar-dropdown-btn::after {
-        transform: translate(0, 26px);
-    }
+  #navbar-dropdown-btn.active::before {
+    transform: translate(0, 18px) rotate(45deg);
+  }
 
-    #navbar-dropdown-btn.active::before {
-        transform: translate(0, 18px) rotate(45deg);
-    }
+  #navbar-dropdown-btn.active::after {
+    transform: translate(0, 18px) rotate(135deg);
+  }
 
-    #navbar-dropdown-btn.active::after {
-        transform: translate(0, 18px) rotate(135deg);
-    }
+  #navbar-btns {
+    width: 100%;
+    transition: 0.5s ease-in;
+    top: -500px;
+    opacity: 1;
+    position: relative;
+    z-index: -1;
+  }
 
+  #navbar-btns.active {
+    transition: 0.5s ease-out;
+    opacity: 1;
+    display: block;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+  }
 
-    #navbar-btns {
-        width: 100%;
-        transition: 0.5s ease-in;
-        top: -500px;
-        opacity: 1;
-        position: relative;
-        z-index: -1;
-    }
+  .nav-item {
+    margin: 0px 0px;
+    background-color: #FFF;
+  }
 
-    #navbar-btns.active {
-        transition: 0.5s ease-out;
-        opacity: 1;
-        display: block;
-        background-color: red;
-        width: 100%;
-        height: 100%;
-        top: 0px;
-    }
+  .nav-button {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: black;
+    text-align: center;
+    position: relative;
+    display: block;
+    transition: background 0.3s;
+    text-decoration: none;
+  }
 
+  .nav-button:hover {
+    cursor: pointer;
+    background-color: #F00;
+    color: #FFF;
+  }
 
-    .nav-item {
-        margin: 0px 0px;
-        background-color: #FFF;
-    }
+  .nav-button:active {
+    background-color: rgb(200, 0, 0);
+  }
 
-    .nav-button {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-        color: black;
-        text-align: center;
-        position: relative;
-        display: block;
-        transition: background 0.3s;
-        text-decoration: none;
-    }
+  .space-1 {
+    grid-column-start: 0;
+    grid-column-end: span 5;
+  }
 
-    .nav-button:hover {
-        cursor: pointer;
-        background-color: #F00;
-        color: #FFF;
-    }
+  .space-2 {
+    grid-column-start: 0;
+    grid-column-end: span 5;
+  }
 
-    .nav-button:active {
-        background-color: rgb(200, 0, 0);
-    }
+  .space-3 {
+    grid-column-start: 0;
+    grid-column-end: span 5;
+  }
 
-    .space-1 {
-      grid-column-start: 0;
-      grid-column-end: span 5;
-    }
-    .space-2 {
-      grid-column-start: 0;
-      grid-column-end: span 5;
-    }
-    .space-3 {
-      grid-column-start: 0;
-      grid-column-end: span 5;
-    }
-    .space-4 {
-      grid-column-start: 0;
-      grid-column-end: span 5;
-    }
-    .space-5 {
-      grid-column-start: 0;
-      grid-column-end: span 5;
-    }
+  .space-4 {
+    grid-column-start: 0;
+    grid-column-end: span 5;
+  }
+
+  .space-5 {
+    grid-column-start: 0;
+    grid-column-end: span 5;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .menu-item {
-        width: 100%;
-        height: 100%;
-    }
+  .menu-item {
+    width: 100%;
+    height: 100%;
+  }
 
-    .nav-item {
-        height: 100%;
-        width: 100%;
-    }
+  .nav-item {
+    height: 100%;
+    width: 100%;
+  }
 
-    .nav-button {
-        display: block;
-        background-color: red;
-        margin: 0;
-        height: 100%;
-        width: 100%;
-        border: none;
-        color: black;
-        text-align: center;
-        transition: background 0.3s;
-        background-color: #FFF;
-        text-decoration: none;
-    }
+  .nav-button {
+    display: block;
+    background-color: red;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    color: black;
+    text-align: center;
+    transition: background 0.3s;
+    background-color: #FFF;
+    text-decoration: none;
+  }
 
-    .nav-button:hover {
-        cursor: pointer;
-        background-color: #F00;
-        color: #FFF;
-    }
+  .nav-button:hover {
+    cursor: pointer;
+    background-color: #F00;
+    color: #FFF;
+  }
 
-    .nav-button:active {
-        background-color: rgb(200, 0, 0);
-    }
+  .nav-button:active {
+    background-color: rgb(200, 0, 0);
+  }
 
-    #navbar-dropdown-btn {
-        opacity: 0;
-    }
+  #navbar-dropdown-btn {
+    opacity: 0;
+  }
 
-    #navbar-btns {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        height: 50px;
-        width: 100%;
-        background-color: #FFF;
+  #navbar-btns {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 50px;
+    width: 100%;
+    background-color: #FFF;
+  }
 
-    }
-
-    .navbar {
-        display: grid;
-        grid-template-columns: 90px 0px 1fr 20px;
-        height: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-        position: fixed;
-        width: 100%;
-        top: 0px;
-        box-shadow: 0 0 3px black;
-    }
+  .navbar {
+    display: grid;
+    grid-template-columns: 90px 0px 1fr 20px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    box-shadow: 0 0 3px black;
+  }
 }
 
 /* .dropbtn {
