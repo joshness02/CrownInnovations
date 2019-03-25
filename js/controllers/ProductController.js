@@ -8,9 +8,9 @@ app.controller("ProductController", ['$scope', function ($scope) {
             about: "The Stationary Calf Pacifier can hang on most wooden and round metal fences (For other options, check out our Stationary Calf Pacifier Wrap Around). It is very durable, so it can be left with the calves when you are away.",
         },
         {
-            name: "Stationary Calf Pacifier ",
+            name: "Stationary Calf Pacifier Wrap Around",
             img: "",
-            description: "Great for longer periods of time when you may not be with you calf",
+            description: "Can be easily secured anywhere you need it",
             about: "The Stationary Calf Pacifier can hang on most wooden and round metal fences (For other options, check out our <a href=\"\">Stationary Calf Pacifier Wrap Around</a>). It is very durable, so it can be left with the calves when you are away.",
         },
         {

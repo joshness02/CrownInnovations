@@ -24,15 +24,9 @@ html {
 
 /*the grid class*/
 .sidebyside {
-<<<<<<< HEAD
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0;
-=======
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
->>>>>>> 0829b56c0547b91310de1f3a758fbd24f352f1c0
 }
 
 .divcontent {
