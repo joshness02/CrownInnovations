@@ -88,6 +88,7 @@ html {
   transition: 0.2s;
   background-color: #FFF;
   z-index: 100;
+  box-shadow: 0 0 3px black;
 }
 
 .nav-text {
@@ -222,6 +223,15 @@ html {
 /*@media css*/
 /*Portrait*/
 @media only screen and (max-width: 768px) {
+  .slide p {
+    color: white;
+  }
+  #slideshow {
+    height: 200px;
+  }
+  .slide {
+    height: 200px;
+  }
   .navbar {
     position: fixed;
     top: 0px;
@@ -400,7 +410,6 @@ html {
     position: fixed;
     width: 100%;
     top: 0px;
-    box-shadow: 0 0 3px black;
   }
 }
 
