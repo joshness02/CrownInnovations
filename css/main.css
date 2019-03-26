@@ -111,6 +111,7 @@ html {
   transition: 1s;
   margin: 0;
   padding: 0;
+  margin-top: -20px;
 }
 
 .slide:hover {
@@ -160,6 +161,7 @@ html {
   padding: 0;
   margin: 0;
   height: 510px;
+  background-color: rgb(150, 150, 150);
 }
 
 /*IDs*/
@@ -177,12 +179,6 @@ html {
 
 #resources {
   background-color: #DDD;
-}
-
-#slideshow {
-  background-color: rgb(150, 150, 150);
-  margin: 0;
-  padding: 0;
 }
 
 #contactinfo {}
@@ -231,6 +227,7 @@ html {
   }
   .slide {
     height: 200px;
+    margin-top: -20px;
   }
   .navbar {
     position: fixed;
