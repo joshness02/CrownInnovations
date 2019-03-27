@@ -2,7 +2,6 @@
     var navbtn = document.getElementById("navbar-dropdown-btn");
     var navmenu = document.getElementById("navbar-btns");
     navbtn.addEventListener("click", function (event) {
-        console.log("Clicked");
         if (navmenu.classList) {
             navmenu.classList.toggle("active");
             navbtn.classList.toggle("active");

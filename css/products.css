@@ -32,9 +32,11 @@
     padding: 10px;
     height: 200px;
     position: relative;
-    /*background-image: url("../imgs/MobilePicture.png");*/
     background-size: cover;
-    background-color: red;
+    background-position: center center;
+    transition: 0.3s;
+    grid-column-start: 0;
+    grid-column-end: span 3;
 }
 
 .product-description {
@@ -82,13 +84,6 @@
     background-color: red;
     z-index: 1;
 }
-.product .background {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: auto;
-}
-
 
 @media only screen and (max-width: 768px) {
     .products-container {
