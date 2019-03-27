@@ -26,8 +26,6 @@
           <menu-item info="item"></menu-item>
         </div>
       </div>
-
-      <script src="js/navbar.js"></script>
     </div>
     <!--Side by Side DIV-->
     <div class="sidebyside">
@@ -46,21 +44,21 @@
           <h1>Our Products</h1>
           <p>A paragraph about our products</p>
         </div>
-        <div class="slide">
-          <h1>Contact Us</h1>
-        </div>
       </div>
       <!--Products content-->
       <div class="space-2 divcontent addshadow" onclick="location.href='products.html'" id="products">
         <h1>Products</h1>
-        <p>Our Products</p>
-        <h4><a href="products.html">All of Our Products</a></h4>
+        <div class="products-container" ng-controller="ProductController">
+          <div ng-repeat="product in products">
+            <product-item product="product"></product-item>
+          </div>
+        </div>
       </div>
       <!--About content-->
       <div class="space-1 divcontent addshadow" onclick="location.href='about.html'" id="about">
         <h1>About</h1>
-        <p>Our Team<br>Our Mentors</p>
-        <h4><a href="about.html">Learn More</a></h4>
+        <h2 class="person" style="padding-right: 50px;">Our Team:<br><br><em>Damon<br>Joshua<br>Carlee<br>Holly<br>Caleb</em></h2>
+        <h3 class="person">Our Mentors:<em><br><br>Mrs. Reynolds<br>Mrs. Zahurones<br>Mrs. Ness<br>Mr. Dodds<br>Mr. Manaat<br>Mr. Zarley</em></h3>
       </div>
       <!--Resources content-->
       <div class="space-1 divcontent addshadow" onclick="location.href='resources.html'" id="resources">
@@ -70,9 +68,12 @@
       </div>
       <!--Blog content-->
       <div class="space-2 divcontent addshadow" onclick="location.href='blog.html'" id="blog">
-        <h1>Blog</h1>
-        <p>Our latest posts:</p>
-        <h4><a href="blog.html">Our Blog</a></h4>
+        <h1>Blog:</h1>
+        <div class="blog-article-container" ng-controller="BlogController">
+            <div class="blog-article" ng-repeat="article in articles">
+                <blog-article article="article"></blog-article>
+            </div>
+        </div>
       </div>
     </div>
     <!--Footer DIV-->
@@ -92,6 +93,11 @@
     <script src="js/app.js"></script>
     <script src="js/controllers/MenuController.js"></script>
     <script src="js/directives/MenuDirective.js"></script>
+    <script src="js/controllers/ProductController.js"></script>
+    <script src="js/directives/ProductDirective.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/controllers/BlogController.js"></script>
+    <script src="js/directives/BlogDirective.js"></script>
   </div>
 </body>
 

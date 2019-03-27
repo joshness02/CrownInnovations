@@ -1,6 +1,5 @@
 var slideNumber = 1;
 var time = 0;
-autoUpdate();
 updateSlides(slideNumber);
 function nextSlide(){
   slideNumber = slideNumber + 1;
@@ -28,8 +27,5 @@ function updateSlides(n){
   slides[slideNumber-1].style.opacity = "100%";
 };
 function autoUpdate(){
-  time++;
-  if(time>30){
-    nextSlide();
-  }
+  setTimeout(nextSlide(), 2000);
 };

@@ -167,6 +167,7 @@ html {
 /*IDs*/
 #blog {
   background-color: #FFF;
+  overflow-x: hidden;
 }
 
 #products {
