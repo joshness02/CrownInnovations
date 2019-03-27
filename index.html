@@ -36,44 +36,37 @@
         </a>
         <a class="next" href="javascript:nextSlide();">
           <pre> > </pre></a>
+        <div class="slide">
+          <h1 class="slideshowtext">Welcome to<br>Crown Innovations!</h1>
+        </div>
         <div class="slide" style="background-image: url('/imgs/team.jpg')" onclick="location.href='about.html'">
           <h1>About Us</h1>
-          <p>A quick about paragraph.</p>
+          <h3>Who we are,<br>Our Mentors,<br>And how we started the idea.</h3>
         </div>
-        <div class="slide" style="background-image: url('/imgs/SPImage.png'); background-size: 40%;" onclick="location.href='products.html'">
+        <div class="slide" style="background-image: url('/imgs/StationaryPicture.png'), url('/imgs/MobilePicture.png');background-position: left, right;background-size: 50%;" onclick="location.href='products.html'">
           <h1>Our Products</h1>
-          <p>A paragraph about our products</p>
+          <h3>Our products, and how we came up with them.</h3>
         </div>
       </div>
       <!--Products content-->
       <div class="space-2 divcontent addshadow" onclick="location.href='products.html'" id="products">
         <h1>Products</h1>
-        <div class="products-container" ng-controller="ProductController">
-          <div ng-repeat="product in products">
-            <product-item product="product"></product-item>
-          </div>
-        </div>
+        <h2>Our different products</h2>
       </div>
-      <!--About content-->
-      <div class="space-1 divcontent addshadow" onclick="location.href='about.html'" id="about">
-        <h1>About</h1>
-        <h2 class="person" style="padding-right: 50px;">Our Team:<br><br><em>Damon<br>Joshua<br>Carlee<br>Holly<br>Caleb</em></h2>
-        <h3 class="person">Our Mentors:<em><br><br>Mrs. Reynolds<br>Mrs. Zahurones<br>Mrs. Ness<br>Mr. Dodds<br>Mr. Manaat<br>Mr. Zarley</em></h3>
+      <!--Blog content-->
+      <div class="space-1 divcontent addshadow" onclick="location.href='blog.html'" id="blog">
+        <h1>Blog</h1>
+        <h2>Catch up on whats going on with Crown Innovations!</h2>
       </div>
       <!--Resources content-->
       <div class="space-1 divcontent addshadow" onclick="location.href='resources.html'" id="resources">
         <h1>Resources</h1>
-        <p>Our Resources</p>
-        <h4><a href="resources.html">Read More</a></h4>
+        <h2>Companies who have helped us manufacture and sell our products.</h2>
       </div>
-      <!--Blog content-->
-      <div class="space-2 divcontent addshadow" onclick="location.href='blog.html'" id="blog">
-        <h1>Blog:</h1>
-        <div class="blog-article-container" ng-controller="BlogController">
-            <div class="blog-article" ng-repeat="article in articles">
-                <blog-article article="article"></blog-article>
-            </div>
-        </div>
+      <!--About content-->
+      <div class="space-2 divcontent addshadow" onclick="location.href='about.html'" id="about">
+        <h1 style="color:FFF;">About</h1>
+        <h2 style="color:FFF;">Who we are, what we do, and the people who have mentored us.</h2>
       </div>
     </div>
     <!--Footer DIV-->
@@ -93,11 +86,6 @@
     <script src="js/app.js"></script>
     <script src="js/controllers/MenuController.js"></script>
     <script src="js/directives/MenuDirective.js"></script>
-    <script src="js/controllers/ProductController.js"></script>
-    <script src="js/directives/ProductDirective.js"></script>
-    <script src="js/products.js"></script>
-    <script src="js/controllers/BlogController.js"></script>
-    <script src="js/directives/BlogDirective.js"></script>
   </div>
 </body>
 
