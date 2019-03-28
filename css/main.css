@@ -36,7 +36,7 @@
   height: var(--main-div-padding);
   float: left;
   display: inline;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .addshadow:hover {
   box-shadow: 0 0 5px #000;
@@ -178,6 +178,26 @@
 
 /*@media css*/
  @media only screen and (max-width: 720px) {
+     .space-1 {
+       grid-column-start: 0;
+       grid-column-end: span 3;
+     }
+     .space-2 {
+       grid-column-start: 0;
+       grid-column-end: span 3;
+     }
+     .space-3 {
+       grid-column-start: 0;
+       grid-column-end: span 3;
+     }
+     .space-4 {
+       grid-column-start: 0;
+       grid-column-end: span 3;
+     }
+     .space-5 {
+       grid-column-start: 0;
+       grid-column-end: span 3;
+     }
      .navbar {
          position: fixed;
          top: 0px;
