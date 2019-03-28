@@ -11,26 +11,27 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
     <div ng-app="CrownInnovationsApp">
         <div class="navbar" ng-controller="MenuController">
-      <img id="logo" src="imgs/logo.png" alt="Logo">
-      <a id="navbar-dropdown-btn"></a>
+            <img id="logo" src="imgs/logo.png" alt="Logo">
+            <a id="navbar-dropdown-btn"></a>
 
-      <div id="navbar-btns">
-        <div class="nav-item" ng-repeat="item in items">
-          <menu-item info="item"></menu-item>
+            <div id="navbar-btns">
+                <div class="nav-item" ng-repeat="item in items">
+                    <menu-item info="item"></menu-item>
+                </div>
+            </div>
+
+            <script src="js/navbar.js"></script>
         </div>
-      </div>
-
-      <script src="js/navbar.js"></script>
-    </div>
         <!--Side By Side content-->
         <div class="sidebyside">
-          <!--Contact Info DIV-->
-          <div class="space-2 divcontent" id="contactinfo">
+            <!--Contact Info DIV-->
+            <div class="space-2 divcontent" id="contactinfo">
                 <h3>Have questions/comments/feedback?<br>Please email us!<br>We will try to get back to you within 1-2 buisness days.</h3>
                 <form id="form" action="javascript:mail()" method="post" enctype="text/plain">
                     Full Name:<br>
@@ -41,9 +42,15 @@
                 </form>
                 <h4><a href="mailto:calfpacifier@gmail.com">Or write your own email</a></h4>
             </div>
-          <!--Other Info DIV-->
-          <div class="space-1 divcontent" id="">
-                <h1>Something goes here...</h1>
+            <!--Other Info DIV-->
+            <div class="space-1 divcontent" id="othercontact">
+                <h1>Or contact us by:</h1>
+                <br>
+                <h3>Phone: xxx-xxx-xxxx</h3>
+                <br>
+                <h3>Email: calfpacifier@gmail.com<h3>
+                        <br>
+                        <h3>Mail: ????</h3>
             </div>
         </div>
         <!--Footer DIV-->

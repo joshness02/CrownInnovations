@@ -11,66 +11,63 @@
   <!--Favicon-->
   <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
   <div ng-app="CrownInnovationsApp">
-    <!--Navbar DIV-->
-    <div class="navbar" ng-controller="MenuController">
-      <img id="logo" src="imgs/logo.png" alt="Logo">
-      <a id="navbar-dropdown-btn"></a>
+        <div class="navbar" ng-controller="MenuController">
+            <img id="logo" src="imgs/logo.png" alt="Logo">
+            <a id="navbar-dropdown-btn"></a>
 
-      <div id="navbar-btns">
-        <div class="nav-item" ng-repeat="item in items">
-          <menu-item info="item"></menu-item>
+            <div id="navbar-btns">
+                <div class="nav-item" ng-repeat="item in items">
+                    <menu-item info="item"></menu-item>
+                </div>
+            </div>
+
+            <script src="js/navbar.js"></script>
         </div>
-      </div>
-
-      <script src="js/navbar.js"></script>
-    </div>
     <!--Side by Side DIV-->
     <div class="sidebyside">
       <!--Slideshow DIV-->
       <div class="space-3 mainheader" id="slideshow">
         <a class="prev" href="javascript:prevSlide();">
-          <pre> < </pre></a>
+          <pre> < </pre>
+        </a>
         <a class="next" href="javascript:nextSlide();">
           <pre> > </pre></a>
+        <div class="slide">
+          <h1 class="slideshowtext">Welcome to<br>Crown Innovations!</h1>
+        </div>
         <div class="slide" style="background-image: url('/imgs/team.jpg')" onclick="location.href='about.html'">
           <h1>About Us</h1>
-          <p>A quick about paragraph.</p>
+          <h3>Who we are,<br>Our Mentors,<br>And how we started the idea.</h3>
         </div>
-        <div class="slide" style="background-image: url('/imgs/SPImage.png'); background-size: 40%;" onclick="location.href='products.html'">
+        <div class="slide" style="background-image: url('/imgs/StationaryPicture.png'), url('/imgs/MobilePicture.png');background-position: left, right;background-size: 50%;" onclick="location.href='products.html'">
           <h1>Our Products</h1>
-          <p>A paragraph about our products</p>
-        </div>
-        <div class="slide">
-          <h1>Contact Us</h1>
+          <h3>Our products, and how we came up with them.</h3>
         </div>
       </div>
       <!--Products content-->
       <div class="space-2 divcontent addshadow" onclick="location.href='products.html'" id="products">
         <h1>Products</h1>
-        <p>Text Here!!!</p>
-        <h4><a href="products.html">All of Our Products</a></h4>
+        <h2>Our different products</h2>
       </div>
-      <!--About content-->
-      <div class="space-1 divcontent addshadow" onclick="location.href='about.html'" id="about">
-        <h1>About</h1>
-        <p>Text Here!!!</p>
-        <h4><a href="about.html">Learn More</a></h4>
+      <!--Blog content-->
+      <div class="space-1 divcontent addshadow" onclick="location.href='blog.html'" id="blog">
+        <h1>Blog</h1>
+        <h2>Catch up on whats going on with Crown Innovations!</h2>
       </div>
       <!--Resources content-->
       <div class="space-1 divcontent addshadow" onclick="location.href='resources.html'" id="resources">
         <h1>Resources</h1>
-        <p>Text Here!!!</p>
-        <h4><a href="resources.html">Read More</a></h4>
+        <h2>Companies who have helped us manufacture and sell our products.</h2>
       </div>
-      <!--Blog content-->
-      <div class="space-2 divcontent addshadow" onclick="location.href='blog.html'" id="blog">
-        <h1>Blog</h1>
-        <p>Text Here!!!</p>
-        <h4><a href="blog.html">Our Blog</a></h4>
+      <!--About content-->
+      <div class="space-2 divcontent addshadow" onclick="location.href='about.html'" id="about">
+        <h1 style="color:FFF;">About</h1>
+        <h2 style="color:FFF;">Who we are, what we do, and the people who have mentored us.</h2>
       </div>
     </div>
     <!--Footer DIV-->

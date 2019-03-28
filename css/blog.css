@@ -1,16 +1,14 @@
-.blog-container {
-    overflow: auto;
-}
-
 .blog-article {
     background-color: white;
-    padding: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
 }
 
 .blog-header {
     border-bottom: 10px solid #F00;
     float: left;
-    width: 100%
+    width: 100%;
 }
 
 
@@ -24,28 +22,13 @@
     float: right;
 }
 
-.blog-history {
-    background-color: #FE0;
-    overflow: scroll;
-    
-}
-
 .blog {
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: 1fr 5fr;
-    position: fixed;
-    height: 90%;
-    padding: 10px;
-    
+    float: left;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-@media only screen and (max-width: 720px) {
-    .blog {
-        grid-template-columns: 100%;
-        grid-template-rows: 200px auto;
-    }
-    .blog-history {
-        display: none
-    }
+.blog-article-container {
+    width: 100%;
 }
