@@ -40,14 +40,21 @@
         <div class="slide fade">
           <h1 class="slideshowtext">Welcome to<br>Crown Innovations!</h1>
         </div>
-        <div class="slide fade" style="background-image: url('/imgs/Team.jpeg')" onclick="location.href='about.html'">
+        <div class="slide fade click" style="background-image: url('/imgs/Team.jpeg')" onclick="location.href='about.html'">
           <h1>About Us</h1>
           <h3>Who we are,<br>Our Mentors,<br>And how we started the idea.</h3>
         </div>
-        <div class="slide fade" style="background-image: url('/imgs/StationaryPicture.png'), url('/imgs/MobilePicture.png');background-position: left, right;background-size: 50%;" onclick="location.href='products.html'">
+        <div class="slide fade click" style="background-image: url('/imgs/StationaryPicture.png'), url('/imgs/MobilePicture.png');background-position: left, right;background-size: 50%;" onclick="location.href='products.html'">
           <h1>Our Products</h1>
           <h3>Our products, and how we came up with them.</h3>
         </div>
+        <script type="text/javascript">
+          function autoUpdate(){
+            setTimeout(autoUpdate, 4000);
+            nextSlide();
+          };
+          autoUpdate();
+        </script>
       </div>
       <!--Products content-->
       <div class="space-2 divcontent addshadow" onclick="location.href='products.html'" id="products">

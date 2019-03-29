@@ -4,11 +4,13 @@ updateSlides(slideNumber);
 function nextSlide(){
   slideNumber = slideNumber + 1;
   updateSlides(slideNumber);
+  clearTimeout();
   time = 0;
 };
 function prevSlide(){
   slideNumber = slideNumber - 1;
   updateSlides(slideNumber);
+  clearTimeout();
   time = 0;
 };
 function updateSlides(n){
@@ -25,8 +27,4 @@ function updateSlides(n){
   }
   slides[slideNumber-1].style.display = "block";
   slides[slideNumber-1].style.opacity = "100%";
-};
-function autoUpdate(){
-  setTimeout(nextSlide(), 2000);
-  updateSlides();
 };

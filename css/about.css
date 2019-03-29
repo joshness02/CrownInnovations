@@ -1,12 +1,14 @@
 #mentors {
-  background-color: rgb(190, 190, 190);
+  background-color: #FFF;
 }
 
 #thanks {
   float: left;
   margin-left: 5%;
 }
-
+#team {
+  background-color: #FFF;
+}
 #team h1 {
   border-bottom: 10px solid #F00;
 }

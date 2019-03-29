@@ -12,18 +12,18 @@
   transition: 0.5s;
 }
 
-.slide:hover {
+.click:hover {
   background-position: right;
   background-size: 80%;
   cursor: hand;
 }
 
-.slide h3 {
+.click h3 {
   color: transparent;
   transition: 0.5s;
 }
 
-.slide:hover h3 {
+.click:hover h3 {
   color: black;
 }
 
