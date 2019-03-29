@@ -34,7 +34,7 @@ html {
   padding-top: 0px;
   padding-left: 2%;
   height: var(--main-div-padding);
-  float: left;
+  float: left; 
   display: inline;
   transition: 0.5s;
   z-index: 0;
