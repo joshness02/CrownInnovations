@@ -1,17 +1,15 @@
 var slideNumber = 1;
-var time = 0;
+var time;
 updateSlides(slideNumber);
 function nextSlide(){
   slideNumber = slideNumber + 1;
   updateSlides(slideNumber);
-  clearTimeout();
-  time = 0;
+  clearTimeout(time);
 };
 function prevSlide(){
   slideNumber = slideNumber - 1;
   updateSlides(slideNumber);
-  clearTimeout();
-  time = 0;
+  clearTimeout(time);
 };
 function updateSlides(n){
   var slides = document.getElementsByClassName('slide');
