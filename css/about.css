@@ -1,0 +1,25 @@
+#mentors {
+  background-color: rgb(190, 190, 190);
+}
+
+#thanks {
+  float: left;
+  margin-left: 5%;
+}
+#team h1 {
+  border-bottom: 10px solid #F00;
+}
+#mentors h1{
+  border-bottom: 10px solid #F00;
+}
+#aboutus {
+  background-color: #FFF;
+  height: auto;
+  padding-bottom: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+#aboutus h1 {
+  border-bottom: 10px solid #F00;
+  text-align: center;
+}

@@ -28,4 +28,5 @@ function updateSlides(n){
 };
 function autoUpdate(){
   setTimeout(nextSlide(), 2000);
+  updateSlides();
 };

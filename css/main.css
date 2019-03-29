@@ -101,76 +101,20 @@ html {
   position: relative;
 }
 
-/*CSS for the Slideshow*/
-.slide {
-  height: inherit;
-  display: none;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 90%;
-  transition: 1s;
-  margin: 0;
-  padding: 0;
-  margin-top: -20px;
-}
-
-.slide:hover {
-  background-position: right;
-  background-size: 80%;
-  cursor: hand;
-}
-
-.slide h3 {
-  color: transparent;
-  transition: 0.5s;
-}
-
-.slide:hover h3 {
-  color: black;
-}
-
-.next,
-.prev {
-  text-decoration: none;
-  border-radius: 3px;
-  transition: 0.5s;
-  color: #000;
-  padding: 50px 10px;
-  margin-top: 10%;
-}
-
-.next {
-  float: right;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.prev {
-  float: left;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.next:hover,
-.prev:hover {
-  background-color: #FFFFFFAA;
-  cursor: hand;
-}
-
 .article:hover {
   cursor: hand;
 }
-#slideshow {
-  padding: 0;
-  margin: 0;
-  height: 510px;
-  background-color: rgb(150, 150, 150);
+
+.person {
+  float: left;
+  margin: 10px;
 }
 
 /*IDs*/
 #blog {
-  background-color: #DDD;
+  background-color: #FFF;
 }
+
 #products {
   background-color: #FFF;
   background-image: url('/imgs/StationaryPicture.png'), url('/imgs/MobilePicture.png');
@@ -185,7 +129,7 @@ html {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  background-image: url('/imgs/team.jpg');
+  background-image: url('/imgs/Team.jpeg');
 }
 
 #resources {
@@ -193,20 +137,6 @@ html {
 }
 
 #contactinfo {}
-
-#mentors {
-  background-color: rgb(190, 190, 190);
-}
-
-#thanks {
-  float: left;
-  margin-left: 5%;
-}
-
-.person {
-  float: left;
-  margin: 10px;
-}
 
 #logo {
   height: 90%;
@@ -217,14 +147,6 @@ html {
 #logo-container {
   text-align: center;
   float: left;
-}
-
-#aboutus {
-  background-color: #FFF;
-  height: auto;
-  padding-bottom: 50px;
-  font-size: 20px;
-  padding-left: 10px;
 }
 
 /*@media css*/
@@ -363,6 +285,10 @@ html {
   .slideshowtext {
     font-size: 250%;
   }
+  #aboutimage {
+    width: 97%;
+    margin-left: 0px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -424,6 +350,15 @@ html {
   }
   .slideshowtext {
     font-size: 550%;
+  }
+  #abouttext {
+    float: left;
+    width:50%;
+    padding-left: 10px;
+  }
+  #aboutimage {
+    margin-left: 20px;
+    width: 40%;
   }
 }
 
