@@ -17,7 +17,7 @@
 }
 
 .about-products h2 {
-    border-bottom: 10px solid #F00;
+    border-bottom: 10px solid #F00; /*border for all titles*/
     float: left;
     width: 100%;
 }
@@ -83,6 +83,48 @@
     bottom: 50px;
     background-color: red;
     z-index: 1;
+}
+#product-display {
+    background-color: #FFF;
+    margin: 40px 10px 10px 10px;
+    padding: 10px;
+    height: auto;
+    overflow:hidden;
+    padding-bottom: 50px;
+}
+#cover-photo {
+    width: auto;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+    display: block;
+}
+#product-about {
+    float: center;
+    
+}
+#product-title {
+    
+    border-bottom: 10px solid #F00;
+}
+.back-btn {
+    font-size: 12px;
+    text-decoration: none;
+    color: #00A;
+    
+    
+}
+
+@media only screen and (max-width: 640px) {
+    
+    #product-about {
+        float: left;
+    }
+    #cover-photo {
+        float: center;
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 768px) {
