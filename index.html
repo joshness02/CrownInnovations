@@ -17,18 +17,18 @@
 
 <body>
   <div ng-app="CrownInnovationsApp">
-        <div class="navbar" ng-controller="MenuController">
-            <img id="logo" src="imgs/logo.png" alt="Logo">
-            <a id="navbar-dropdown-btn"></a>
+    <div class="navbar" ng-controller="MenuController">
+      <img id="logo" src="imgs/logo.png" alt="Logo">
+      <a id="navbar-dropdown-btn"></a>
 
-            <div id="navbar-btns">
-                <div class="nav-item" ng-repeat="item in items">
-                    <menu-item info="item"></menu-item>
-                </div>
-            </div>
-
-            <script src="js/navbar.js"></script>
+      <div id="navbar-btns">
+        <div class="nav-item" ng-repeat="item in items">
+          <menu-item info="item"></menu-item>
         </div>
+      </div>
+
+      <script src="js/navbar.js"></script>
+    </div>
     <!--Side by Side DIV-->
     <div class="sidebyside">
       <!--Slideshow DIV-->
@@ -65,12 +65,13 @@
       </div>
       <!--About content-->
       <div class="space-2 divcontent addshadow" onclick="location.href='about.html'" id="about">
-        <h1 style="color:FFF;">About</h1>
-        <h2 style="color:FFF;">Who we are, what we do, and the people who have mentored us.</h2>
+        <h1>About</h1>
+        <h2>Who we are, what we do, and the people who have mentored us.</h2>
       </div>
     </div>
     <!--Footer DIV-->
     <div class="footer">
+      <h1>Our mission is to provide safe and affordable help to people.</h1>
       <ul>
         <li><a href="resources.html">Resources</a></li>
         <li><a href="about.html">About</a></li>
