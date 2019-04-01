@@ -1,14 +1,78 @@
-.divcontent h1 {
-  border-bottom: 10px solid #F00;
+.contact-form {
+    padding: 10px;
+    background-color: #EEE;
+    overflow: hidden;
+    margin-bottom: 0px;
+    border-radius: 5px;
 }
 
-.divcontent {
-  height: 800px;
+.contact-form label {
+    display: block;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: #222;
 }
 
-#contactinfo {
-  background-color: #DDD;
+.contact-form input, .contact-form textarea {
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: border 0.2s;
+    background-color: #FFF;
+    display: block;
+    width: 100%;
+    padding-left: 5px;
 }
-#othercontact {
-  background-color: #DDD;
+
+.contact-form input {
+    height: 25px;
+}
+
+.contact-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #FFF;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    box-sizing: content-box;
+
+}
+.title-text {
+    border-bottom: solid #F00 3px;
+}
+
+#submit {
+    float: left;
+    margin-top: 20px;
+    background-color: #F00;
+    width: 100px;
+    height: 30px;
+}
+
+
+.contact-form textarea {
+    height: 25px;
+    height: 200px;
+    overflow: scroll;
+    resize: none;
+    padding-top: 5px;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-bottom: solid #F00 2px;
+}
+.about-contact {
+    float: left;
+    width: 45%;
+    margin-right: 10px;
+}
+@media only screen and (max-width: 640px) {
+    .about-contact {
+        float: none;
+        width: auto;
+        margin-bottom: 50px;
+        margin-right: 0px;
+        text-align: center;
+    }
 }
