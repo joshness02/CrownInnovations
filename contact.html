@@ -16,10 +16,10 @@
 </head>
 
 <body>
-  <div ng-app="CrownInnovationsApp">
-    <div class="navbar" ng-controller="MenuController">
-      <img id="logo" src="imgs/logo.png" alt="Logo">
-      <a id="navbar-dropdown-btn"></a>
+    <div ng-app="CrownInnovationsApp">
+        <div class="navbar" ng-controller="MenuController">
+            <img id="logo" src="imgs/logo.png" alt="Logo">
+            <a id="navbar-dropdown-btn"></a>
 
             <div id="navbar-btns">
                 <div class="nav-item" ng-repeat="item in items">
@@ -37,60 +37,33 @@
                 <p>Phone: <a href="tel:1-xxx-xxx-xxxx"> (xxx) xxx-xxxx</a></p>
                 <p>Email: <a href="mailto:calfpacifier@gmail.com">calfpacifier@gmail.com</a></p>
             </div>
-        <form class="contact-form" method="post" action="php/contact.php">
-            <label>Name</label>
-            <input name="name" placeholder="Enter Name Here">
+            <form class="contact-form" method="post" action="php/contact.php">
+                <label>Name</label>
+                <input name="name" placeholder="Enter Name Here">
 
-            <label>Email</label>
-            <input name="email" type="email" placeholder="Enter Email Here">
+                <label>Email</label>
+                <input name="email" type="email" placeholder="Enter Email Here">
 
-            <label>Message</label>
-            <textarea name="message" placeholder="Enter Message Here"></textarea>
+                <label>Message</label>
+                <textarea name="message" placeholder="Enter Message Here"></textarea>
 
-            <input id="submit" name="submit" type="submit" value="Submit">
-        </form>
+                <input id="submit" name="submit" type="submit" value="Submit">
+            </form>
         </div>
-      </div>
+    </div>
 
-      <script src="js/navbar.js"></script>
-    </div>
-    <!--Side By Side content-->
-    <div class="sidebyside">
-      <!--Contact Info DIV-->
-      <div class="space-2 divcontent" id="contactinfo">
-        <h1>Contact</h1>
-        <h2>Have questions/comments/feedback?<br>Please email us!<br>We will try to get back to you within 1-2 buisness days.</h2>
-        <form id="form" action="javascript:mail()" method="post" enctype="text/plain">
-          Full Name:<br>
-          <input type="text" style="height:5%;font-size:14pt;width:50%;" name="name" id="name" required><br><br> Message:
-          <br>
-          <textarea type="text" style="height:20%;font-size:10pt;width:100%;" name="message" id="message" placeholder="Comments/Feedback/Questions" required></textarea><br><br>
-          <input type="submit" style="width:15%;" value="Submit" onclick="javascript:variable1(document.getElementById('name').value);variable3(document.getElementById('message').value);">
-        </form>
-        <h4><a href="mailto:calfpacifier@gmail.com">Or write your own email</a></h4>
-      </div>
-      <!--Other Info DIV-->
-      <div class="space-1 divcontent" id="othercontact">
-        <h1>Or contact us by:</h1>
-        <br>
-        <h3>Phone: xxx-xxx-xxxx</h3>
-        <br>
-        <h3>Email: calfpacifier@gmail.com<h3>
-            <br>
-            <h3>Mail: ????</h3>
-      </div>
-    </div>
+    <script src="js/navbar.js"></script>
     <!--Footer DIV-->
     <div class="footer">
-      <h1>Our mission is to provide safe and affordable help to farmers.</h1>
-      <ul>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-      <h4>Have questions? <a href="contact.html">Contact Us!</a></h4>
+        <h1>Our mission is to provide safe and affordable help to farmers.</h1>
+        <ul>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+        <h4>Have questions? <a href="contact.html">Contact Us!</a></h4>
     </div>
     <!--Include Javascript-->
     <script src="js/app.js"></script>
@@ -98,7 +71,7 @@
     <script src="js/controllers/MenuController.js"></script>
     <script src="js/directives/MenuDirective.js"></script>
 
-  </div>
+    </div>
 </body>
 
 </html>
