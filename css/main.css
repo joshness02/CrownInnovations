@@ -122,7 +122,7 @@ html {
 }
 
 #products {
-    background-image: url('/imgs/StationaryPicture.png'), url('/imgs/MobilePicture.png');
+    background-image: url('./../imgs/StationaryPicture.png'), url('./../imgs/MobilePicture.png');
     background-size: 51%;
     background-position: right bottom, bottom left;
     background-repeat: no-repeat, no-repeat;
@@ -134,7 +134,7 @@ html {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    background-image: url('/imgs/Team.jpeg');
+    background-image: url('./../imgs/Team.jpeg');
 }
 
 #resources {
