@@ -1,13 +1,12 @@
 <div class="product" style="background-image: url('{{product.img}}');" onclick="clickProduct(this)" id="product-{{product.index}}">
-    <h3 class="product-name" >{{product.name}}</h3>
+    <h3 class="product-name">{{product.name}}</h3>
+    <div class="product-footer">
+        <a class="product-price">{{product.price | currency}}</a>
+        <a class="product-available">{{product.available}}</a>
+    </div>
     <div class="product-description">
         <p class="product-description-text">
             {{product.description}}
         </p>
-    </div>
-    <div class="product-popup">
-        <div class="popup-content">
-            <p>Some text</p>
-        </div>
     </div>
 </div>
