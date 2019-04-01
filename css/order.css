@@ -1,4 +1,4 @@
-.contact-form {
+.order-form {
     padding: 10px;
     background-color: #EEE;
     overflow: hidden;
@@ -6,15 +6,14 @@
     border-radius: 5px;
 }
 
-.contact-form label {
+.order-form label {
     display: block;
     margin-top: 20px;
     letter-spacing: 1px;
     color: #222;
 }
 
-.contact-form input,
-.contact-form textarea {
+.order-form input {
     border: none;
     border-radius: 3px;
     font-size: 14px;
@@ -23,13 +22,20 @@
     display: block;
     width: 100%;
     padding-left: 5px;
-}
-
-.contact-form input {
     height: 25px;
+    margin-top: 5px;
 }
 
-.contact-container {
+#price {
+    color: #D00;
+}
+
+.line {
+    border-bottom: solid 1px black;
+    margin: 10px 0px;
+}
+
+.order-container {
     margin-top: 10px;
     padding: 10px;
     background-color: #FFF;
@@ -37,6 +43,7 @@
     margin-bottom: 10px;
     margin-top: 35px;
     box-sizing: content-box;
+    overflow: hidden;
 
 }
 
@@ -47,34 +54,24 @@
 #submit {
     float: left;
     margin-top: 20px;
-    background-color: #F00;
+    background-color: #0A0;
     width: 100px;
     height: 40px;
 }
 
-
-.contact-form textarea {
-    height: 25px;
-    height: 200px;
-    overflow: scroll;
-    resize: none;
-    padding-top: 5px;
-}
-
-input:focus,
-textarea:focus {
+input:focus {
     outline: none;
     border-bottom: solid #F00 2px;
 }
 
-.about-contact {
+.about-order {
     float: left;
-    width: 45%;
+    width: 100%;
     margin-right: 10px;
 }
 
 @media only screen and (max-width: 640px) {
-    .about-contact {
+    .about-order {
         float: none;
         width: auto;
         margin-bottom: 50px;
