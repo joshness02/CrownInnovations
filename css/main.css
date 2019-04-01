@@ -109,6 +109,9 @@ html {
   float: left;
 }
 
+.footer h1 {
+  border-bottom: 10px solid #F00;
+}
 /*IDs*/
 #blog {
   background-color: #FFF;
