@@ -5,15 +5,9 @@ html {
   padding: 0;
   background-color: #CCC;
   margin-top: 25px;
+    width: 100%;
 }
 
-:root {
-  --main-div-padding: 500px;
-  --main-left-side-size: 60%;
-  --main-left-side-size-2: 40%;
-  --main-logo-width: 50px;
-  --navbar-height: 50px;
-}
 
 .mainheader {
   padding: 0px;
@@ -78,6 +72,7 @@ html {
   height: auto;
   background-color: #FFF;
   float: left;
+    bottom: 0px;
 }
 
 /*Navbar css*/
