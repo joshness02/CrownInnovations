@@ -22,7 +22,7 @@ html {
   display: inline;
 }
 
-/*the grid class*/
+/*the grid css*/
 .sidebyside {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -70,14 +70,6 @@ html {
   grid-column-end: span 5;
 }
 
-.footer {
-  padding: 0;
-  width: 100%;
-  height: auto;
-  background-color: #FFF;
-  float: left;
-}
-
 .divcontent h1{
   border-bottom: 10px solid #F00;
   text-align: center;
@@ -106,6 +98,15 @@ html {
 
 .article:hover {
   cursor: hand;
+}
+
+/*footer css*/
+.footer {
+  padding: 1%;
+  width: 98%;
+  height: auto;
+  background-color: #FFF;
+  float: left;
 }
 
 /*IDs*/
@@ -287,6 +288,7 @@ html {
   }
 }
 
+/*Landscape*/
 @media only screen and (min-width: 768px) {
   .menu-item {
     width: 100%;

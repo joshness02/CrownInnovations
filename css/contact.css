@@ -2,6 +2,10 @@
   border-bottom: 10px solid #F00;
 }
 
+.divcontent {
+  height: 800px;
+}
+
 #contactinfo {
   background-color: #DDD;
 }
