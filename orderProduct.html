@@ -33,12 +33,12 @@
                 <p>After submitting your order, we will call you to confirm your order. </p>
                 <form class="order-form" method="post" action="php/order.php">
                     <label>You Are Ordering</label>
-                    <input type="text" readonly="readonly" value="Product Name" id="product-name">
+                    <input type="text" name="product-name" readonly="readonly" value="Product Name" id="product-name">
 
                     <label>Price: <a id="price">---</a></label>
 
                     <label>Quantity</label>
-                    <input id="quantity" type="number" min="1" max="10" value="1" onchange="updatePrice(this)">
+                    <input id="quantity" name="quantity" type="number" min="1" max="10" value="1" onchange="updatePrice(this)">
 
                     <label>Total: <a id="total">---</a> </label>
 
@@ -55,8 +55,8 @@
                     <input name="phone" type="tel" required="required" placeholder="Enter Phone Number Here">
 
                     <label>Address</label>
-                    <input name="adress" type="address" required="required" placeholder="Address Line 1">
-                    <input name="email" type="email" placeholder="Address Line 2 (optional)">
+                    <input name="address1" type="address" required="required" placeholder="Address Line 1">
+                    <input name="address2" type="email" placeholder="Address Line 2 (optional)">
 
                     <label>Please make sure you fill out everything accurately to reduce delay in your order.</label>
                     <input id="submit" name="submit" type="submit" value="Submit">
