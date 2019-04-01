@@ -1,15 +1,15 @@
 var slideNumber = 1;
-var time = 0;
+var time;
 updateSlides(slideNumber);
 function nextSlide(){
   slideNumber = slideNumber + 1;
   updateSlides(slideNumber);
-  time = 0;
+  clearTimeout(time);
 };
 function prevSlide(){
   slideNumber = slideNumber - 1;
   updateSlides(slideNumber);
-  time = 0;
+  clearTimeout(time);
 };
 function updateSlides(n){
   var slides = document.getElementsByClassName('slide');
@@ -25,7 +25,4 @@ function updateSlides(n){
   }
   slides[slideNumber-1].style.display = "block";
   slides[slideNumber-1].style.opacity = "100%";
-};
-function autoUpdate(){
-  setTimeout(nextSlide(), 2000);
 };

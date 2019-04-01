@@ -1,0 +1,68 @@
+/*CSS for about.html*/
+.person {
+  float: left;
+  margin: 10px;
+}
+
+#mentors {
+  background-color: #FFF;
+}
+
+#thanks {
+  float: left;
+  margin-left: 5%;
+}
+
+#team {
+  background-color: #FFF;
+}
+
+#team .person {
+  margin: 0 10px;
+}
+
+#team h1 {
+  border-bottom: 10px solid #F00;
+}
+
+#mentors h1 {
+  border-bottom: 10px solid #F00;
+}
+
+#aboutus {
+  background-color: #FFF;
+  height: auto;
+  padding-bottom: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+#aboutus h1 {
+  border-bottom: 10px solid #F00;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #aboutimage {
+    width: 97%;
+    margin-left: 0px;
+  }
+  #aboutus,
+  #team,
+  #mentors{
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #abouttext {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+  }
+
+  #aboutimage {
+    margin-left: 20px;
+    width: 40%;
+  }
+}
