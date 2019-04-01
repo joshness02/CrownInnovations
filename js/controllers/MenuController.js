@@ -1,9 +1,5 @@
-app.controller("MenuController", ['$scope', function($scope){
+app.controller("MenuController", ['$scope', function ($scope) {
     $scope.items = [
-        {
-            title: 'Home',
-            link: 'index.html',
-        },
         {
             title: 'About',
             link: 'about.html',
@@ -19,10 +15,6 @@ app.controller("MenuController", ['$scope', function($scope){
         {
             title: 'Contact',
             link: 'contact.html',
-        },
-        {
-            title: 'Resources',
-            link: 'resources.html',
         },
     ];
 }]);

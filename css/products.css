@@ -83,11 +83,12 @@
     height: auto;
     overflow: hidden;
     padding-bottom: 50px;
+    position: relative;
 }
 
 #cover-photo {
-    width: auto;
-    height: 200px;
+    width: 300px;
+    height: auto;
     float: left;
     margin-right: 10px;
     display: block;
@@ -109,6 +110,27 @@
     color: #00A;
 
 
+}
+
+#product-order {
+    color: white;
+    text-decoration: none;
+    background-color: #0A0;
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+#product-order.available:hover {
+    background-color: #0C0;
+}
+
+#product-price {
+    color: #D00;
 }
 
 @media only screen and (max-width: 640px) {

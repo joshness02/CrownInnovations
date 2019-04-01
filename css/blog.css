@@ -2,32 +2,29 @@
     background-color: white;
     padding: 10px;
     margin-bottom: 10px;
-    display: block;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .blog-article img {
-    width: 0%;
+    width: 50%;
+    max-width: 480px;
     height: auto;
-    padding: 10px;
     float: left;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .blog-header {
     border-bottom: 10px solid #F00;
     float: left;
     width: 100%;
-    
+    margin-bottom: 10px;
 }
-.blog-content {
-    width: 100%;
-    height: 100%;
-    float: left;
-}
-
 
 .blog-title {
     float: left;
+    margin-left: 20px;
 }
 
 .blog-date {
@@ -45,4 +42,14 @@
 
 .blog-article-container {
     width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+
+    .blog-article img {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
 }
