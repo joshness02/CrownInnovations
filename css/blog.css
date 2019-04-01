@@ -8,6 +8,7 @@
 
 .blog-article img {
     width: 50%;
+    max-width: 480px;
     height: auto;
     float: left;
     display: inline-block;
@@ -41,4 +42,14 @@
 
 .blog-article-container {
     width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+
+    .blog-article img {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
 }
