@@ -1,4 +1,3 @@
-
 .products-container {
     padding: 10px;
     display: grid;
@@ -13,11 +12,12 @@
     grid-column-end: span 3;
     min-height: 200px;
     text-align: center;
-    
+
 }
 
 .about-products h2 {
-    border-bottom: 10px solid #F00; /*border for all titles*/
+    border-bottom: 10px solid #F00;
+    /*border for all titles*/
     float: left;
     width: 100%;
 }
@@ -52,6 +52,7 @@
     padding: 10px;
     width: 100%;
 }
+
 .product-description-text {
     min-width: 200px;
     transition: 0.2s;
@@ -62,36 +63,28 @@
 .product:hover {
     cursor: hand;
 }
+
 .product:hover .product-description {
     opacity: 1;
     height: 50%;
-    
+
 }
+
 .product:hover .product-description-text {
     opacity: 1;
     display: block;
 }
-.product-popup {
-    display: none;
-}
-.product-popup.show {
-    display:block;
-    position: fixed;
-    top:100px;
-    left: 50px;
-    right: 50px;
-    bottom: 50px;
-    background-color: red;
-    z-index: 1;
-}
+
+
 #product-display {
     background-color: #FFF;
     margin: 40px 10px 10px 10px;
     padding: 10px;
     height: auto;
-    overflow:hidden;
+    overflow: hidden;
     padding-bottom: 50px;
 }
+
 #cover-photo {
     width: auto;
     height: 200px;
@@ -99,27 +92,31 @@
     margin-right: 10px;
     display: block;
 }
+
 #product-about {
     float: center;
-    
+
 }
+
 #product-title {
-    
+
     border-bottom: 10px solid #F00;
 }
+
 .back-btn {
     font-size: 12px;
     text-decoration: none;
     color: #00A;
-    
-    
+
+
 }
 
 @media only screen and (max-width: 640px) {
-    
+
     #product-about {
         float: left;
     }
+
     #cover-photo {
         float: center;
         width: 100%;
@@ -127,19 +124,39 @@
     }
 }
 
+.product-footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: #EEE;
+    left: 0;
+    right: 0;
+    padding: 5px 10px;
+}
+
+.product-price {
+    float: left;
+}
+
+.product-available {
+    float: right;
+}
+
 @media only screen and (max-width: 768px) {
     .products-container {
         grid-template-columns: 1fr 1fr;
     }
+
     .about-products {
         grid-column-end: span 2;
 
     }
 }
+
 @media only screen and (max-width: 480px) {
     .products-container {
         grid-template-columns: 1fr;
     }
+
     .about-products {
         grid-column-end: span 1;
 
