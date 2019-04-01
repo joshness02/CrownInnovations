@@ -1,10 +1,6 @@
 app.controller("MenuController", ['$scope', function ($scope) {
     $scope.items = [
         {
-            title: 'Home',
-            link: 'index.html',
-        },
-        {
             title: 'About',
             link: 'about.html',
         },
