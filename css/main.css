@@ -135,6 +135,11 @@ html {
     height: 90%;
     display: inline-block;
     margin-left: 10px;
+    transition: filter 0.3s;
+}
+
+#logo:hover {
+    filter: invert(50%);
 }
 
 #logo-container {
