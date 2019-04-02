@@ -111,6 +111,11 @@ html {
     background-color: #FFF;
 }
 
+.footer h2 {
+    border-bottom: solid 5px #F00;
+}
+
+.footer #footerheader {
     border-bottom: 10px solid #F00;
 }
 
