@@ -291,6 +291,15 @@ html {
 
     .slideshowtext {
         font-size: 250%;
+        color: #FFF;
+    }
+    #slidelogo {
+      background-size: 100%;
+      background-position: center;
+    }
+    #productslide {
+      background-position: top, bottom;
+      background-size: 330px;
     }
 }
 
@@ -355,6 +364,15 @@ html {
 
     .slideshowtext {
         font-size: 550%;
+        color: #000;
+    }
+    #slidelogo {
+      background-size: 50%;
+      background-position: right;
+    }
+    #productslide {
+      background-position: left, right;
+      background-size: 50%;
     }
 }
 
