@@ -8,7 +8,7 @@ app.controller("BlogController", ['$scope', function ($scope) {
                 "Today we got our first order of 100 Stationary Calf Pacifiers put together",
                 "We are very excited and hope to get them in the hands of farmers very soon!",
             ], //a new item adds a page break
-            img: "./imgs/firstBatch.png",
+            img: "imgs/firstBatch.png",
         },
     ];
     $scope.articles.sort(function (a, b) {
