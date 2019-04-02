@@ -35,10 +35,10 @@
             <!--Slideshow DIV-->
             <div class="space-3 mainheader" id="slideshow">
                 <a class="prev" href="javascript:prevSlide();">
-                    <pre> &lang; </pre>
+                    <pre> < </pre>
                 </a>
                 <a class="next" href="javascript:nextSlide();">
-                    <pre> &rang; </pre>
+                    <pre> > </pre>
                 </a>
                 <div class="slide fade" style="background-image: url('imgs/logopics.png'); background-size: 40%; background-position: right;">
                     <h1 class="slideshowtext">Welcome to<br>Crown Innovations!</h1>
@@ -52,7 +52,13 @@
                     <h1>About Us</h1>
                     <h3>Order a Calf Pacifier</h3>
                 </div>
-
+                <script>
+                    function autoUpdate() {
+                        setTimeout(autoUpdate, 10000);
+                        nextSlide();
+                    };
+                    autoUpdate();
+                </script>
             </div>
             <!--Products content-->
             <div class="space-2 divcontent addshadow" onclick="location.href='products.html'" id="products">
@@ -91,6 +97,4 @@
             <script src="js/directives/MenuDirective.js"></script>
         </div>
     </div>
-</body>
-
-</html>
+</body></html>
