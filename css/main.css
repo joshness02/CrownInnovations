@@ -109,10 +109,8 @@ html {
     width: 98%;
     height: auto;
     background-color: #FFF;
-    float: left;
 }
 
-#footerheader {
     border-bottom: 10px solid #F00;
 }
 
@@ -293,13 +291,15 @@ html {
         font-size: 250%;
         color: #FFF;
     }
+
     #slidelogo {
-      background-size: 100%;
-      background-position: center;
+        background-size: 100%;
+        background-position: center;
     }
+
     #productslide {
-      background-position: top, bottom;
-      background-size: 330px;
+        background-position: top, bottom;
+        background-size: 330px;
     }
 }
 
@@ -366,13 +366,15 @@ html {
         font-size: 550%;
         color: #000;
     }
+
     #slidelogo {
-      background-size: 50%;
-      background-position: right;
+        background-size: 50%;
+        background-position: right;
     }
+
     #productslide {
-      background-position: left, right;
-      background-size: 50%;
+        background-position: left, right;
+        background-size: 50%;
     }
 }
 
