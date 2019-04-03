@@ -133,19 +133,19 @@ html {
 }
 
 #logo {
-    height: 90%;
+    height: 95%;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 20px;
     transition: filter 0.3s;
-}
-
-#logo:hover {
-    filter: invert(50%);
+    object-fit: cover;
 }
 
 #logo-container {
-    text-align: center;
-    float: left;
+    transition: filter 0.3s;
+}
+
+#logo-container:hover {
+    filter: invert(50%);
 }
 
 /*@media css*/
