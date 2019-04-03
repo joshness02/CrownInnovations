@@ -4,9 +4,16 @@
     margin: 10px;
 }
 
+.sidebyside {
+    margin: 10px;
+}
+
+.mainheader {
+    margin: 10px 0px;
+}
+
 #mentors {
     background-color: #EEE;
-    border-radius: 5px;
 }
 
 #thanks {

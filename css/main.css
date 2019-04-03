@@ -3,7 +3,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    background-color: #CCC;
+    background-color: #EEE;
     margin-top: 25px;
     width: 100%;
 }
@@ -20,7 +20,6 @@ html {
 .sidebyside {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 0;
 }
 
 .divcontent {
@@ -110,14 +109,6 @@ html {
 /*IDs*/
 #blog {
     background-color: #DDD;
-}
-
-#products {
-    background-image: url('./../imgs/StationaryPicture.png'), url('./../imgs/MobilePicture.png');
-    background-size: 51%;
-    background-position: right center, center left;
-    background-repeat: no-repeat, no-repeat;
-    background-color: #EEE;
 }
 
 #about {
@@ -303,6 +294,15 @@ html {
     #mainslide {
         background-size: 90%;
     }
+
+    #products {
+        background-image: url('./../imgs/StationaryPicture.png'), url('./../imgs/MobilePicture.png');
+        background-size: 280px;
+        background-position: top center, bottom center;
+        background-repeat: no-repeat, no-repeat;
+        background-color: #EEE;
+    }
+
 }
 
 /*Landscape*/
@@ -383,6 +383,15 @@ html {
         background-size: 40%;
         background-position: right;
     }
+
+    #products {
+        background-image: url('./../imgs/StationaryPicture.png'), url('./../imgs/MobilePicture.png');
+        background-size: 51%;
+        background-position: right center, center left;
+        background-repeat: no-repeat, no-repeat;
+        background-color: #EEE;
+    }
+
 }
 
 /* .dropbtn {

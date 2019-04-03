@@ -4,6 +4,7 @@
     margin-bottom: 10px;
     overflow: hidden;
     padding-bottom: 20px;
+    border-radius: 10px;
 }
 
 .blog-article img {
