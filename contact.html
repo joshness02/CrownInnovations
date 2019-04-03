@@ -39,15 +39,15 @@
             </div>
             <form class="contact-form" method="post" action="php/contact.php">
                 <label>Name</label>
-                <input name="name" placeholder="Enter Name Here">
+                <input name="name" placeholder="Enter Name Here" onkeypress="return event.keyCode != 13;">
 
                 <label>Email</label>
-                <input name="email" type="email" placeholder="Enter Email Here">
+                <input name="email" type="email" placeholder="Enter Email Here" onkeypress="return event.keyCode != 13;">
 
                 <label>Message</label>
                 <textarea name="message" placeholder="Enter Message Here"></textarea>
 
-                <input id="submit" name="submit" type="submit" value="Submit">
+                <input class="submit" name="submit" type="submit" value="Submit">
             </form>
         </div>
 
@@ -70,4 +70,6 @@
         <script src="js/directives/MenuDirective.js"></script>
 
     </div>
-</body></html>
+</body>
+
+</html>

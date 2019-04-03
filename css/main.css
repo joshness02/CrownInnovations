@@ -148,9 +148,29 @@ html {
     filter: invert(50%);
 }
 
+.submit {
+    float: left;
+    margin-top: 20px;
+    background-color: #F00;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.submit:hover {
+    background-color: #E00;
+}
+
 /*@media css*/
 /*Portrait*/
 @media only screen and (max-width: 640px) {
+
+    .submit {
+        width: 100%;
+    }
+
     .slide p {
         color: white;
     }

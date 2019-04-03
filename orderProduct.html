@@ -30,8 +30,9 @@
         <div class="order-container">
             <div class="about-order">
                 <h2 class="title-text">Order</h2>
-                <p>After submitting your order, we will call you to confirm your order. </p>
-                <form class="order-form" method="post" action="php/order.php">
+
+                <p id="square-payment">Payments are fulfilled through <a href="https://squareup.com/us/en/about">Square</a>. Upon placing your order, you will be emailed an invoice through the Square service. Your order will be shipped shortly after you pay.</p>
+                <form class="order-form" method="post" action="php/order.php" onkeypress="return event.keyCode != 13;">
                     <label>You Are Ordering</label>
                     <input type="text" name="product-name" readonly="readonly" value="Product Name" id="product-name">
 
@@ -59,7 +60,7 @@
                     <input name="address2" type="email" placeholder="Address Line 2 (optional)">
 
                     <label>Please make sure you fill out everything accurately to reduce delay in your order.</label>
-                    <input id="submits" name="submit" type="button" value="Submit" onclick="if (confirm('Submit form?')) alert(document.forms[0].submit())">
+                    <input class="submit" name="submit" type="submit" value="Submit">
                 </form>
             </div>
             <!--Footer DIV-->
