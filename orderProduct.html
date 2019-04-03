@@ -15,7 +15,7 @@
 <body>
     <div ng-app="CrownInnovationsApp">
         <div class="navbar" ng-controller="MenuController">
-            <a href="index.html"><img id="logo" src="imgs/logo.png" alt="Logo"></a>
+            <a id="logo-container" href="index.html"><img id="logo" src="imgs/logo.png" alt="Logo"></a>
             <a id="navbar-dropdown-btn"></a>
 
             <div id="navbar-btns">
@@ -52,14 +52,14 @@
 
 
                     <label>Phone Number</label>
-                    <input name="phone" type="tel" required="required" placeholder="Enter Phone Number Here">
+                    <input name="phone" type="tel" required="required" placeholder="(xxx) xxx-xxxx">
 
                     <label>Address</label>
                     <input name="address1" type="address" required="required" placeholder="Address Line 1">
                     <input name="address2" type="email" placeholder="Address Line 2 (optional)">
 
                     <label>Please make sure you fill out everything accurately to reduce delay in your order.</label>
-                    <input id="submit" name="submit" type="submit" value="Submit">
+                    <input id="submits" name="submit" type="button" value="Submit" onclick="if (confirm('Submit form?')) alert(document.forms[0].submit())">
                 </form>
             </div>
             <!--Footer DIV-->
