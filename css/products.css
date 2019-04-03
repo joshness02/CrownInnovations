@@ -118,11 +118,9 @@
     background-color: #0A0;
     padding: 10px;
     border-radius: 10px;
-    float: right;
     transition: background-color 0.3s;
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    /*left: 20px;*/
 }
 
 #product-order.available:hover {
@@ -133,18 +131,6 @@
     color: #D00;
 }
 
-@media only screen and (max-width: 640px) {
-
-    #product-about {
-        float: left;
-    }
-
-    #cover-photo {
-        float: center;
-        width: 100%;
-        height: auto;
-    }
-}
 
 .product-footer {
     position: absolute;
@@ -161,6 +147,41 @@
 
 .product-available {
     float: right;
+}
+
+#about-square {
+    color: #999;
+    float: right;
+    width: 30%;
+    font-size: 14px;
+    text-align: left;
+}
+
+#about-square a {
+    color: #88F;
+}
+
+@media only screen and (max-width: 640px) {
+
+    #product-about {
+        float: left;
+    }
+
+    #cover-photo {
+        float: center;
+        width: 100%;
+        height: auto;
+    }
+
+    #product-order {
+        margin-top: 15px;
+        float: left;
+        position: static;
+    }
+
+    #about-square {
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 768px) {
