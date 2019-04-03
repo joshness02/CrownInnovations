@@ -307,7 +307,7 @@ html {
 
     .slideshowtext {
         font-size: 250%;
-        color: #FFF;
+        color: #000;
     }
 
     #slidelogo {
@@ -318,6 +318,10 @@ html {
     #productslide {
         background-position: top, bottom;
         background-size: 330px;
+    }
+
+    #mainslide {
+        background-size: 90%;
     }
 }
 
@@ -393,6 +397,11 @@ html {
     #productslide {
         background-position: left, right;
         background-size: 50%;
+    }
+
+    #mainslide {
+        background-size: 40%;
+        background-position: right;
     }
 }
 
