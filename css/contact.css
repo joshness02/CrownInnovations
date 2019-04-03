@@ -13,7 +13,7 @@
     color: #222;
 }
 
-.contact-form input,
+.contact-form input:not(.submit),
 .contact-form textarea {
     border: none;
     border-radius: 3px;
@@ -25,7 +25,7 @@
     padding-left: 5px;
 }
 
-.contact-form input {
+.contact-form input:not(.submit) {
     height: 25px;
 }
 
@@ -44,14 +44,6 @@
     border-bottom: solid #F00 3px;
 }
 
-#submit {
-    float: left;
-    margin-top: 20px;
-    background-color: #F00;
-    width: 100px;
-    height: 40px;
-}
-
 
 .contact-form textarea {
     height: 25px;
@@ -61,7 +53,7 @@
     padding-top: 5px;
 }
 
-input:focus,
+input:focus:not(.submit),
 textarea:focus {
     outline: none;
     border-bottom: solid #F00 2px;

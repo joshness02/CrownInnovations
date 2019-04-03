@@ -13,7 +13,7 @@
     color: #222;
 }
 
-.order-form input {
+.order-form input:not(.submit) {
     border: none;
     border-radius: 3px;
     font-size: 14px;
@@ -51,15 +51,7 @@
     border-bottom: solid #F00 3px;
 }
 
-#submit {
-    float: left;
-    margin-top: 20px;
-    background-color: #0A0;
-    width: 100px;
-    height: 40px;
-}
-
-input:focus {
+input:focus:not(.submit) {
     outline: none;
     border-bottom: solid #F00 2px;
 }
