@@ -111,9 +111,6 @@ html {
     background-color: #EEE;
 }
 
-#aboutdivtext {
-    color: #000;
-}
 
 #products {
     background-image: url('../imgs/StationaryPicture.png'), url('../imgs/MobilePicture.png');
@@ -322,6 +319,10 @@ html {
     .prev {
         margin-top: 60%;
     }
+
+    #aboutdivtext {
+        color: #000;
+    }
 }
 
 /*Landscape*/
@@ -415,6 +416,9 @@ html {
         margin-top: 10%;
     }
 
+    #aboutdivtext {
+        color: #EEE;
+    }
 }
 
 /* .dropbtn {
