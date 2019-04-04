@@ -276,26 +276,10 @@ html {
         background-color: rgb(200, 0, 0);
     }
 
-    .space-1 {
-        grid-column-start: 0;
-        grid-column-end: span 5;
-    }
-
-    .space-2 {
-        grid-column-start: 0;
-        grid-column-end: span 5;
-    }
-
-    .space-3 {
-        grid-column-start: 0;
-        grid-column-end: span 5;
-    }
-
-    .space-4 {
-        grid-column-start: 0;
-        grid-column-end: span 5;
-    }
-
+    .space-1,
+    .space-2,
+    .space-3,
+    .space-4,
     .space-5 {
         grid-column-start: 0;
         grid-column-end: span 5;
@@ -309,6 +293,7 @@ html {
     #slidelogo {
         background-size: 100%;
         background-position: center;
+        opacity: 0;
     }
 
     #productslide {
