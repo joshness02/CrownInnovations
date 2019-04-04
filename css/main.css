@@ -108,18 +108,26 @@ html {
 
 /*IDs*/
 #blog {
-    background-color: #DDD;
+    background-color: #EEE;
+}
+
+#aboutdivtext {
+    color: #EEE;
+}
+
+#products {
+    background-color: #EEE;
 }
 
 #about {
-    background-color: #DDD;
+    background-color: #EEE;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     background-image: url('./../imgs/Team.JPEG');
 }
 
-#resources {
+#contact {
     background-color: #EEE;
 }
 
@@ -326,7 +334,7 @@ html {
 
     .next,
     .prev {
-        margin-top: 50%;
+        margin-top: 60%;
     }
 }
 
@@ -392,6 +400,8 @@ html {
     .slideshowtext {
         font-size: 550%;
         color: #000;
+        margin: 0;
+        padding-top: 10px;
     }
 
     #slidelogo {

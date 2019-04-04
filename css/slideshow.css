@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
+    background-color: #FFF;
     transition: 1s;
     margin: 0;
     padding: 0;
@@ -60,7 +61,6 @@
     background-color: #EEE;
     transition: 1s;
 }
-
 
 .fade {
     animation-name: fade;
