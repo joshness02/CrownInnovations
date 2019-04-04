@@ -112,10 +112,13 @@ html {
 }
 
 #aboutdivtext {
-    color: #EEE;
+    color: #000;
 }
 
 #products {
+    background-image: url('../imgs/StationaryPicture.png'), url('../imgs/MobilePicture.png');
+    background-color: #EEE;
+    background-repeat: no-repeat, no-repeat;
     background-color: #EEE;
 }
 
@@ -124,7 +127,8 @@ html {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-    background-image: url('./../imgs/Team.JPEG');
+    background-image: url('../imgs/Team.JPEG');
+    background-blend-mode: hue;
 }
 
 #contact {
@@ -310,11 +314,8 @@ html {
     }
 
     #products {
-        background-image: url('./../imgs/StationaryPicture.png'), url('./../imgs/MobilePicture.png');
         background-size: 280px;
         background-position: top center, bottom center;
-        background-repeat: no-repeat, no-repeat;
-        background-color: #EEE;
     }
 
     .next,
@@ -405,11 +406,8 @@ html {
     }
 
     #products {
-        background-image: url('./../imgs/StationaryPicture.png'), url('./../imgs/MobilePicture.png');
         background-size: 51%;
         background-position: right center, center left;
-        background-repeat: no-repeat, no-repeat;
-        background-color: #EEE;
     }
 
     .next,
