@@ -117,15 +117,16 @@ html {
     background-color: #EEE;
     background-repeat: no-repeat, no-repeat;
     background-color: #EEE;
+
 }
 
 #about {
-    background-color: #EEE;
+    background-color: #aaa;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-image: url('../imgs/Team.JPEG');
-    background-blend-mode: hue;
+    background-blend-mode: soft-light;
 }
 
 #contact {
@@ -414,10 +415,6 @@ html {
     .next,
     .prev {
         margin-top: 10%;
-    }
-
-    #aboutdivtext {
-        color: #EEE;
     }
 }
 
