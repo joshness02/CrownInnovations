@@ -324,6 +324,10 @@ html {
         background-color: #EEE;
     }
 
+    .next,
+    .prev {
+        margin-top: 50%;
+    }
 }
 
 /*Landscape*/
@@ -411,6 +415,11 @@ html {
         background-position: right center, center left;
         background-repeat: no-repeat, no-repeat;
         background-color: #EEE;
+    }
+
+    .next,
+    .prev {
+        margin-top: 10%;
     }
 
 }
