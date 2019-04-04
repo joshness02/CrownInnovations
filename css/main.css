@@ -285,9 +285,10 @@ html {
         grid-column-end: span 5;
     }
 
-    .slideshowtext {
-        font-size: 250%;
+    #slideshowtext {
         color: #000;
+        bottom: 10px;
+        position: absolute;
     }
 
     #slidelogo {
@@ -382,11 +383,10 @@ html {
         top: 0px;
     }
 
-    .slideshowtext {
-        font-size: 550%;
+    #slideshowtext {
         color: #000;
-        margin: 0;
-        padding-top: 10px;
+        position: absolute;
+        bottom: 26%;
     }
 
     #slidelogo {
@@ -400,8 +400,8 @@ html {
     }
 
     #mainslide {
-        background-size: 40%;
-        background-position: right;
+        background-size: 50%;
+        background-position: center;
     }
 
     #products {
