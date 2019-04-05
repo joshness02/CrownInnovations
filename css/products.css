@@ -24,6 +24,7 @@
 
 .about-products p {
     margin: 10px;
+    float: left;
 }
 
 .product {
@@ -75,6 +76,9 @@
     display: block;
 }
 
+.divcontent {
+    height: auto;
+}
 
 #product-display {
     background-color: #FFF;
@@ -102,6 +106,15 @@
 #product-title {
 
     border-bottom: 10px solid #F00;
+}
+
+#productvideo {
+    float: right;
+    margin: 20px;
+}
+
+#producttext {
+    float: left;
 }
 
 .back-btn {
