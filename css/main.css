@@ -291,9 +291,31 @@ html {
         grid-column-end: span 5;
     }
 
-    .slideshowtext {
-        font-size: 250%;
+    #slideshowtext {
         color: #000;
+        position: absolute;
+        top: 20px;
+        right: 4%;
+        padding: 10px;
+        border: 3px solid #F00;
+        border-radius: 10px;
+    }
+
+    #buybutton {
+        color: #000;
+        position: absolute;
+        bottom: 280px;
+        right: 15%;
+        padding: 20px 30px;
+        background-color: #F00;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    #buybutton:hover {
+        background-color: #000;
+        color: #FFF;
     }
 
     #slidelogo {
@@ -385,11 +407,31 @@ html {
         top: 0px;
     }
 
-    .slideshowtext {
-        font-size: 550%;
+    #slideshowtext {
         color: #000;
-        margin: 0;
-        padding-top: 10px;
+        position: absolute;
+        top: 120px;
+        right: 4%;
+        padding: 10px;
+        border: 3px solid #F00;
+        border-radius: 10px;
+    }
+
+    #buybutton {
+        color: #000;
+        position: absolute;
+        bottom: 420px;
+        right: 15%;
+        padding: 20px 30px;
+        background-color: #F00;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    #buybutton:hover {
+        background-color: #000;
+        color: #FFF;
     }
 
     #slidelogo {
@@ -403,8 +445,9 @@ html {
     }
 
     #mainslide {
-        background-size: 40%;
-        background-position: right;
+        background-size: contain;
+        background-position: 15%;
+        text-align: center;
     }
 
     #products {
