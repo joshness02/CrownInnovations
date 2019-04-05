@@ -4,7 +4,7 @@
     display: none;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: contain;
     background-color: #FFF;
     transition: 1s;
     margin: 0;
@@ -13,7 +13,7 @@
 }
 
 .click:hover {
-    background-position: 0 150px;
+    background-position: center 150px;
     background-size: contain;
     cursor: hand;
 }

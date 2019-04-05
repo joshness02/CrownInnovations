@@ -164,7 +164,7 @@ html {
 
 .next,
 .prev {
-    margin-top: 23%;
+    margin-top: 18%;
 }
 
 /*@media css*/
@@ -298,20 +298,19 @@ html {
     #slideshow-footer {
         color: #000;
         position: absolute;
-        bottom: 250px;
+        bottom: 160px;
         left: 3%;
         border: 3px solid #F00;
         border-radius: 10px;
         width: 90%;
         padding: 10px 5px;
         height: 50px;
-        margin-bottom: 10px;
     }
 
     #slideshowtext {
         font-size: 20px;
         float: left;
-        width: 270px;
+        width: 250px;
         margin: 0;
     }
 
@@ -422,14 +421,13 @@ html {
     #slideshow-footer {
         color: #000;
         position: absolute;
-        bottom: 250px;
+        bottom: 160px;
         left: 4%;
         border: 3px solid #F00;
         border-radius: 10px;
         width: 90%;
         padding: 10px 10px;
         height: 50px;
-        margin-bottom: 10px;
     }
 
     #slideshowtext {
