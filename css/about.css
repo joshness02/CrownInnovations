@@ -1,4 +1,8 @@
 /*CSS for about.html*/
+#menu-about {
+    border-bottom: 2px solid #F00;
+}
+
 .person {
     float: left;
     margin: 10px;
@@ -64,6 +68,7 @@
     text-align: center;
 }
 
+
 @media only screen and (max-width: 640px) {
     #aboutimage {
         width: 97%;
@@ -80,6 +85,7 @@
         text-align: left;
         column-count: 2;
     }
+
 }
 
 /*

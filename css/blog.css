@@ -1,3 +1,7 @@
+#menu-blog {
+    border-bottom: 2px solid red;
+}
+
 .blog-article {
     background-color: white;
     padding: 10px;
