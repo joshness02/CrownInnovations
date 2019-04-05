@@ -52,6 +52,7 @@
 .prev:hover {
     background-color: #FFFFFFAA;
     cursor: hand;
+    box-shadow: 0 0 3px #F00;
 }
 
 #slideshow {

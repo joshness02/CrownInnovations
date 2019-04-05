@@ -293,8 +293,29 @@ html {
 
     #slideshowtext {
         color: #000;
-        bottom: 10px;
         position: absolute;
+        top: 20px;
+        right: 4%;
+        padding: 10px;
+        border: 3px solid #F00;
+        border-radius: 10px;
+    }
+
+    #buybutton {
+        color: #000;
+        position: absolute;
+        bottom: 220px;
+        right: 15%;
+        padding: 20px 30px;
+        background-color: #F00;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    #buybutton:hover {
+        background-color: #000;
+        color: #FFF;
     }
 
     #slidelogo {
