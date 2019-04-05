@@ -389,7 +389,9 @@ html {
     #slideshowtext {
         color: #000;
         position: absolute;
-        bottom: 26%;
+        bottom: 250px;
+        right: 50%;
+
     }
 
     #slidelogo {
@@ -403,8 +405,9 @@ html {
     }
 
     #mainslide {
-        background-size: 50%;
+        background-size: contain;
         background-position: center;
+        text-align: center;
     }
 
     #products {
