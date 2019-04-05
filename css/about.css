@@ -1,6 +1,7 @@
 /*CSS for about.html*/
 #menu-about {
-    border-bottom: 2px solid #F00;
+    z-index: 10;
+    box-shadow: 0 10px 10px -10px #F00;
 }
 
 .person {

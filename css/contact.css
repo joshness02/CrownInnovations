@@ -1,5 +1,5 @@
 #menu-contact {
-    border-bottom: 2px solid red;
+    box-shadow: 0 10px 10px -10px #F00;
 }
 
 .contact-form {

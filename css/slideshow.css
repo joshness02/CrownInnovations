@@ -8,13 +8,13 @@
     background-color: #FFF;
     transition: 1s;
     margin: 0;
-    padding: 0;
+    padding: 10px 0 0 0;
     margin-top: -20px;
 }
 
 .click:hover {
-    background-position: right;
-    background-size: 80%;
+    background-position: 0 150px;
+    background-size: contain;
     cursor: hand;
 }
 

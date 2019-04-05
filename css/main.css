@@ -114,10 +114,8 @@ html {
 
 #products {
     background-image: url('../imgs/StationaryPicture.png'), url('../imgs/MobilePicture.png');
-    background-color: #EEE;
     background-repeat: no-repeat, no-repeat;
-    background-color: #EEE;
-
+    background-color: #9c9c9c;
 }
 
 #about {
@@ -164,6 +162,10 @@ html {
     background-color: #E00;
 }
 
+.next,
+.prev {
+    margin-top: 23%;
+}
 
 /*@media css*/
 /*Portrait*/
@@ -185,6 +187,7 @@ html {
         height: 200px;
         margin-top: -20px;
     }
+
 
     .navbar {
         position: fixed;
@@ -291,24 +294,36 @@ html {
         grid-column-end: span 5;
     }
 
-    #slideshowtext {
+
+    #slideshow-footer {
         color: #000;
         position: absolute;
-        top: 20px;
-        right: 4%;
-        padding: 10px;
+        bottom: 250px;
+        left: 3%;
         border: 3px solid #F00;
         border-radius: 10px;
+        width: 90%;
+        padding: 10px 5px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    #slideshowtext {
+        font-size: 20px;
+        float: left;
+        width: 270px;
+        margin: 0;
     }
 
     #buybutton {
         color: #000;
-        position: absolute;
-        bottom: 280px;
-        right: 15%;
-        padding: 20px 30px;
         background-color: #F00;
-        border-radius: 10px;
+        border-radius: 5px;
+        float: right;
+        margin: auto;
+        height: 100%;
+        padding: 16px;
+        box-sizing: border-box;
         text-decoration: none;
         transition: 0.3s;
     }
@@ -330,7 +345,8 @@ html {
     }
 
     #mainslide {
-        background-size: 90%;
+        background-size: 450px;
+        background-position: center 50px
     }
 
     #products {
@@ -338,10 +354,6 @@ html {
         background-position: top center, bottom center;
     }
 
-    .next,
-    .prev {
-        margin-top: 60%;
-    }
 
     #aboutdivtext {
         color: #000;
@@ -407,24 +419,35 @@ html {
         top: 0px;
     }
 
-    #slideshowtext {
+    #slideshow-footer {
         color: #000;
         position: absolute;
-        top: 120px;
-        right: 4%;
-        padding: 10px;
+        bottom: 250px;
+        left: 4%;
         border: 3px solid #F00;
         border-radius: 10px;
+        width: 90%;
+        padding: 10px 10px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    #slideshowtext {
+        font-size: 24px;
+        float: left;
+        position: relative;
+        bottom: 5px;
     }
 
     #buybutton {
         color: #000;
-        position: absolute;
-        bottom: 420px;
-        right: 15%;
-        padding: 20px 30px;
         background-color: #F00;
-        border-radius: 10px;
+        border-radius: 5px;
+        float: right;
+        margin: auto;
+        height: 100%;
+        padding: 15px;
+        box-sizing: border-box;
         text-decoration: none;
         transition: 0.3s;
     }
@@ -445,19 +468,14 @@ html {
     }
 
     #mainslide {
-        background-size: contain;
-        background-position: 15%;
+        background-position: center 20px;
+        background-size: 500px;
         text-align: center;
     }
 
     #products {
         background-size: 51%;
         background-position: right center, center left;
-    }
-
-    .next,
-    .prev {
-        margin-top: 10%;
     }
 }
 
