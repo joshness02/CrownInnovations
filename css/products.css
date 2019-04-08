@@ -103,17 +103,16 @@
 
 #product-about {
     float: center;
-
 }
 
 #product-title {
-
     border-bottom: 10px solid #F00;
 }
 
 #productvideo {
     float: right;
     margin: 20px;
+    border-radius: 3px;
 }
 
 #producttext {

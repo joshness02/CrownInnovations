@@ -298,7 +298,7 @@ html {
     #slideshow-footer {
         color: #000;
         position: absolute;
-        bottom: 160px;
+        top: 460px;
         left: 3%;
         border: 3px solid #F00;
         border-radius: 10px;
@@ -308,9 +308,9 @@ html {
     }
 
     #slideshowtext {
-        font-size: 20px;
+        font-size: 16px;
         float: left;
-        width: 250px;
+        width: 180px;
         margin: 0;
     }
 
