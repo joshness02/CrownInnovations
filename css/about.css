@@ -7,6 +7,7 @@
 .person {
     margin: 10px;
     height: 200px;
+    text-align: left;
 }
 
 .person img {
@@ -14,10 +15,15 @@
     height: 75, px;
     border-radius: 50px;
     float: left;
+    margin-right: 10px;
 }
 
-.sidebyside {
-    margin: 10px;
+.person h4 {
+    margin-top: 0;
+}
+
+.person p {
+    width: 400px;
 }
 
 .mainheader {
@@ -30,8 +36,8 @@
 
 #thanks {
     float: left;
-    margin-left: 5%;
     margin: 10px;
+    width: 100%;
 }
 
 #team-container {
@@ -43,10 +49,7 @@
 
 #team {
     overflow: hidden;
-}
-
-#team .person {
-    margin: 0 10px;
+    column-width: 400px;
 }
 
 #team h1 {
@@ -55,6 +58,13 @@
 
 #mentors h2 {
     border-bottom: 3px solid #F00;
+}
+
+#mentors {
+    background-color: #eee;
+    padding: 10px;
+    overflow: hidden;
+    border: none;
 }
 
 #mentors-list {
