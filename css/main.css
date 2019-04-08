@@ -164,7 +164,7 @@ html {
 
 .next,
 .prev {
-    margin-top: 18%;
+    margin-top: 150px;
 }
 
 /*@media css*/
@@ -420,8 +420,8 @@ html {
 
     #slideshow-footer {
         color: #000;
-        position: absolute;
-        bottom: 160px;
+        position: relative;
+        top: 420px;
         left: 4%;
         border: 3px solid #F00;
         border-radius: 10px;

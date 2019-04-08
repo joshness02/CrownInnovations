@@ -3,7 +3,7 @@ var products = [
         name: "Stationary Calf Pacifier for Wooden Fences",
         img: "imgs/StationaryFencePicture.png",
         description: "Great for longer periods of time when you may not be with you calf",
-        about: "The Stationary Calf Pacifier can hang on most wooden and round metal fences (For other options, check out our Stationary Calf Pacifier Wrap Around). It is very durable, so it can be left with the calves when you are away.",
+        about: "The Stationary Calf Pacifier can hang on most wooden and round metal fences (For other options, check out our Stationary Calf Pacifier Wrap Around). It is very durable, so it can be left with the calves when you are away.<br>It has a hole in the back, so you can secure it to a fence with a nail, twine, or other material.",
         price: 20,
         available: "Order Now!",
         canOrder: true,

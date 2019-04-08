@@ -5,8 +5,15 @@
 }
 
 .person {
-    float: left;
     margin: 10px;
+    height: 200px;
+}
+
+.person img {
+    width: 75px;
+    height: 75, px;
+    border-radius: 50px;
+    float: left;
 }
 
 .sidebyside {
@@ -24,10 +31,18 @@
 #thanks {
     float: left;
     margin-left: 5%;
+    margin: 10px;
+}
+
+#team-container {
+    background-color: #FFF;
+    width: 100%;
+    height: auto;
+
 }
 
 #team {
-    background-color: #FFF;
+    overflow: hidden;
 }
 
 #team .person {
@@ -53,6 +68,7 @@
     font-size: 16px;
     padding-left: 10px;
     padding: 10px;
+    margin: 10px;
 }
 
 #aboutimage {
