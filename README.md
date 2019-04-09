@@ -1,6 +1,6 @@
 #Crown Innovations Website
 
-By Joshua and Caleb Ness
+By Joshua Ness (@joshness02) and Caleb Ness (@CalebNessy)
 
 This website was created for Crown Innovations LLC, a business we (Caleb and Joshua) and some friends started a few years ago.
 
