@@ -1,4 +1,6 @@
 /*CSS for the Slideshow*/
+
+/*css for slides*/
 .slide {
     height: inherit;
     display: none;
@@ -10,6 +12,8 @@
     margin: 0;
     padding: 10px 0 0 0;
     margin-top: -20px;
+    width: 94%;
+    margin: 0 3%;
 }
 
 .click:hover {
@@ -27,13 +31,20 @@
     color: black;
 }
 
+#productslide {
+    background-color: #AAA;
+}
+
+/*css for slideshow buttons*/
+
 .next,
 .prev {
     text-decoration: none;
     border-radius: 3px;
     transition: 0.5s;
     color: #000;
-    padding: 50px 10px;
+    padding: 10% 10px;
+    margin-top: 80px;
 }
 
 .next {
@@ -52,8 +63,15 @@
 .prev:hover {
     background-color: #FFFFFFAA;
     cursor: hand;
-    box-shadow: 0 0 3px #F00;
 }
+
+.next:active,
+.prev:active {
+    background-color: #BBB;
+    transition: 0.1s;
+}
+
+/*css for main slideshow*/
 
 #slideshow {
     padding: 0;
@@ -62,6 +80,8 @@
     background-color: #EEE;
     transition: 1s;
 }
+
+/*css for fading animation*/
 
 .fade {
     animation-name: fade;
