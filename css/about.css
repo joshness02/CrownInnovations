@@ -35,6 +35,8 @@
     margin: 10px;
     display: grid;
     float: none;
+    position: relative;
+    top: 10px;
 }
 
 #team {
