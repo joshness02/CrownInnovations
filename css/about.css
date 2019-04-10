@@ -28,10 +28,6 @@
     margin: 10px 0px;
 }
 
-#mentors {
-    background-color: #EEE;
-}
-
 #thanks {
     float: left;
     margin: 10px;
@@ -60,10 +56,11 @@
 }
 
 #mentors {
-    background-color: #eee;
+    background-color: #FFF;
     padding: 10px;
     overflow: hidden;
     border: none;
+    margin: 20px 10px;
 }
 
 #mentors-list {
