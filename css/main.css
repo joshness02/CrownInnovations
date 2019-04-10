@@ -295,58 +295,6 @@ html {
     }
 
 
-    #slideshow-footer {
-        color: #000;
-        position: absolute;
-        top: 460px;
-        left: 3%;
-        border: 3px solid #F00;
-        border-radius: 10px;
-        width: 90%;
-        padding: 10px 5px;
-        height: 50px;
-    }
-
-    #slideshowtext {
-        font-size: 16px;
-        float: left;
-        width: 180px;
-        margin: 0;
-    }
-
-    #actionbutton {
-        color: #000;
-        background-color: #F00;
-        border-radius: 5px;
-        float: right;
-        margin: auto;
-        height: 100%;
-        padding: 16px;
-        box-sizing: border-box;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    #actionbutton:hover {
-        background-color: #000;
-        color: #FFF;
-    }
-
-    #slidelogo {
-        background-size: 100%;
-        background-position: center;
-        opacity: 0;
-    }
-
-    #productslide {
-        background-position: top, bottom;
-        background-size: 330px;
-    }
-
-    #mainslide {
-        background-size: 450px;
-        background-position: center 50px
-    }
 
     #products {
         background-size: 280px;
@@ -418,59 +366,6 @@ html {
         top: 0px;
     }
 
-    #slideshow-footer {
-        color: #000;
-        position: relative;
-        top: 420px;
-        left: 4%;
-        border: 3px solid #F00;
-        border-radius: 10px;
-        width: 90%;
-        padding: 10px 10px;
-        height: 50px;
-        background-color: #FFF;
-    }
-
-    #slideshowtext {
-        font-size: 24px;
-        float: left;
-        position: relative;
-        bottom: 5px;
-    }
-
-    #actionbutton {
-        color: #000;
-        background-color: #F00;
-        border-radius: 5px;
-        float: right;
-        margin: auto;
-        height: 100%;
-        padding: 15px;
-        box-sizing: border-box;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    #actionbutton:hover {
-        background-color: #000;
-        color: #FFF;
-    }
-
-    #slidelogo {
-        background-size: 50%;
-        background-position: right;
-    }
-
-    #productslide {
-        background-position: left, right;
-        background-size: 50%;
-    }
-
-    #mainslide {
-        background-position: center 20px;
-        background-size: 500px;
-        text-align: center;
-    }
 
     #products {
         background-size: 51%;
