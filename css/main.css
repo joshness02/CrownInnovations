@@ -6,6 +6,7 @@ html {
     background-color: #EEE;
     margin-top: 25px;
     width: 100%;
+    font-family: sans-serif;
 }
 
 
@@ -37,7 +38,7 @@ html {
 }
 
 .addshadow:hover {
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 15px #000;
     z-index: 1;
     cursor: hand;
     border-radius: 5px;
@@ -66,6 +67,10 @@ html {
 .space-5 {
     grid-column-start: 0;
     grid-column-end: span 5;
+}
+
+.addradius {
+    border-radius: 10px;
 }
 
 /*Navbar css*/
