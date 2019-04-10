@@ -24,10 +24,6 @@
     margin-top: 0;
 }
 
-.mainheader {
-    margin: 10px 0px;
-}
-
 #thanks {
     float: left;
     margin: 10px;
@@ -73,8 +69,7 @@
     padding-bottom: 50px;
     font-size: 16px;
     padding-left: 10px;
-    padding: 10px;
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
 }
 
 #aboutimage {
