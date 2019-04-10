@@ -199,8 +199,8 @@
     }
 
     #mainslide {
-        background-size: 450px;
-        background-position: center 50px
+        background-size: 300px;
+        background-position: center center;
     }
 }
 
