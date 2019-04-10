@@ -137,11 +137,10 @@ html {
 }
 
 #logo {
-    height: 95%;
+    height: 48px;
     display: inline-block;
     margin-left: 20px;
     transition: filter 0.3s;
-    object-fit: cover;
 }
 
 #logo-container {
