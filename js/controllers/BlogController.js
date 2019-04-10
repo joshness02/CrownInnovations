@@ -1,6 +1,16 @@
 app.controller("BlogController", ['$scope', function ($scope) {
     $scope.articles = [
         {
+            title: "Power Show Expo",
+            date: new Date('2018', '00', '30'),
+            //content: "firstOrder.html",
+            content: [
+                "Today we went to the <a href='https://iowapowershow.com/' target='_blank'>Iowa Power Farming Show</a> at the Iowa Events Center.",
+                "We made some great contacts, and had a great oppurtunity to get our name and product out there!",
+            ], //a new item adds a page break
+            img: "imgs/powerShow.jpeg",
+        },
+        {
             title: "First Order!",
             date: new Date('2018', '06', '18'),
             //content: "firstOrder.html",

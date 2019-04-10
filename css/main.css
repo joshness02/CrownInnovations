@@ -315,7 +315,7 @@ html {
         margin: 0;
     }
 
-    #buybutton {
+    #actionbutton {
         color: #000;
         background-color: #F00;
         border-radius: 5px;
@@ -328,7 +328,7 @@ html {
         transition: 0.3s;
     }
 
-    #buybutton:hover {
+    #actionbutton:hover {
         background-color: #000;
         color: #FFF;
     }
@@ -429,6 +429,7 @@ html {
         width: 90%;
         padding: 10px 10px;
         height: 50px;
+        background-color: #FFF;
     }
 
     #slideshowtext {
@@ -438,7 +439,7 @@ html {
         bottom: 5px;
     }
 
-    #buybutton {
+    #actionbutton {
         color: #000;
         background-color: #F00;
         border-radius: 5px;
@@ -451,7 +452,7 @@ html {
         transition: 0.3s;
     }
 
-    #buybutton:hover {
+    #actionbutton:hover {
         background-color: #000;
         color: #FFF;
     }

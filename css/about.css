@@ -9,6 +9,7 @@
     height: 200px;
     text-align: left;
     display: inline-block;
+    float: left;
 }
 
 .person img {
@@ -22,8 +23,6 @@
 .person h4 {
     margin-top: 0;
 }
-
-.person p {}
 
 .mainheader {
     margin: 10px 0px;
