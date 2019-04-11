@@ -13,7 +13,7 @@ function updateSlides(n) {
         slides[slideNumber - 1].style.opacity = "0%";
     }
     slides[slideNumber - 1].style.display = "block";
-    slides[slideNumber - 1].style.opacity = "100%";
+    slides[slideNumber - 1].style.float = "100%";
 };
 
 updateSlides(slideNumber);

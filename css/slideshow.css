@@ -12,7 +12,11 @@
     margin: 0;
     padding: 10px 0 0 0;
     margin-top: -20px;
-    margin: 0 45px;
+}
+
+.click {
+    margin: 0 40px;
+    height: inherit;
 }
 
 .click:hover {
@@ -34,6 +38,7 @@
     background-color: #AAA;
 }
 
+
 /*css for slideshow buttons*/
 
 .next,
@@ -42,8 +47,9 @@
     border-radius: 3px;
     transition: 0.5s;
     color: #000;
-    padding: 100px 10px;
-    margin-top: 100px;
+    padding: 50px 10px;
+    margin-top: 150px;
+    background-color: #EEE;
 }
 
 .next {
@@ -58,17 +64,6 @@
     border-bottom-left-radius: 0;
 }
 
-.next:hover,
-.prev:hover {
-    background-color: #FFFFFFAA;
-    cursor: hand;
-}
-
-.next:active,
-.prev:active {
-    background-color: #BBB;
-    transition: 0.1s;
-}
 
 /*css for main slideshow*/
 
@@ -145,14 +140,32 @@
         background-size: 500px;
         text-align: center;
     }
+
+    .next:hover,
+    .prev:hover {
+        background-color: #EFEFEF;
+        cursor: hand;
+    }
+
+    .next:active,
+    .prev:active {
+        background-color: #BBB;
+        transition: 0.1s;
+    }
 }
 
 @media only screen and (max-width: 640px) {
 
+
+    .next,
+    .prev {
+        margin-top: 20px;
+    }
+
     #slideshow-footer {
         color: #000;
         position: absolute;
-        top: 460px;
+        top: 250px;
         left: 3%;
         border: 3px solid #F00;
         border-radius: 10px;
@@ -163,9 +176,9 @@
     }
 
     #slideshowtext {
-        font-size: 18px;
+        font-size: 15px;
         float: left;
-        width: 200px;
+        width: 140px;
         margin: 0;
     }
 
@@ -195,12 +208,22 @@
 
     #productslide {
         background-position: top, bottom;
-        background-size: 330px;
+        background-size: 200px;
     }
 
     #mainslide {
-        background-size: 300px;
-        background-position: center center;
+        background-size: 200px;
+        background-position: center 20px;
+    }
+
+    #slideshow {
+        height: 300px;
+    }
+
+    .next:active,
+    .prev:active {
+        background-color: #000;
+        transition: 0.1s;
     }
 }
 

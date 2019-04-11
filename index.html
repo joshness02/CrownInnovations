@@ -55,7 +55,6 @@
                 <a class="next" href="javascript:nextSlide();">
                     <pre> &rang; </pre>
                 </a>
-
                 <div class="slide fade" style="background-image: url('imgs/logopics.png');" id="mainslide">
 
                     <div id="slideshow-footer">
@@ -67,14 +66,18 @@
                     </div>
 
                 </div>
-                <div class="slide fade click" style="background-image: url('imgs/Team.JPEG')" onclick="location.href='about.html'">
-                    <h1>About Us</h1>
-                    <h3>Who we are / Our Mentors / How we started the idea</h3>
+                <div class="slide fade" style="background-image: url('imgs/Team.JPEG')" onclick="location.href='about.html'">
+                    <div class="click">
+                        <h1>About Us</h1>
+                        <h3>Who we are / Our Mentors / How we started the idea</h3>
+                    </div>
                 </div>
 
-                <div class="slide fade click" style="background-image: url('imgs/StationaryPicture.png'), url('imgs/MobilePicture.png');" onclick="location.href='products.html'" id="productslide">
-                    <h1>Products</h1>
-                    <h3>Order Yours Now!</h3>
+                <div class="slide fade" style="background-image: url('imgs/StationaryPicture.png'), url('imgs/MobilePicture.png');" onclick="location.href='products.html'" id="productslide">
+                    <div class="click">
+                        <h1>Products</h1>
+                        <h3>Order Yours Now!</h3>
+                    </div>
                 </div>
 
                 <script>
@@ -83,6 +86,7 @@
                         nextSlide();
                     };
                     autoUpdate();
+
                 </script>
             </div>
 
@@ -145,4 +149,6 @@
 
         </div>
     </div>
-</body></html>
+</body>
+
+</html>
