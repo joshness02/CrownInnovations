@@ -18,6 +18,15 @@ app.controller("BlogController", ['$scope', function ($scope) {
             ], //a new item adds a page break
             img: "imgs/blog/firstBatch.png",
         },
+        {
+            title: "First Order!",
+            date: new Date('2018', '06', '18'),
+            content: [
+                "Today we got our first order of 100 Stationary Calf Pacifiers put together",
+                "We are very excited and hope to get them in the hands of farmers very soon!",
+            ], //a new item adds a page break
+            img: "imgs/blog/firstBatch.png",
+        },
     ];
     $scope.articles.sort(function (a, b) {
         a = a.date;
