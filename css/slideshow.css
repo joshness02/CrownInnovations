@@ -14,6 +14,11 @@
     margin-top: -20px;
 }
 
+.click {
+    margin: 40px;
+    height: inherit;
+}
+
 .click:hover {
     background-position: center 150px;
     background-size: contain;
@@ -32,6 +37,7 @@
 #productslide {
     background-color: #AAA;
 }
+
 
 /*css for slideshow buttons*/
 
@@ -137,7 +143,7 @@
 
     .next:hover,
     .prev:hover {
-        background-color: #EFEFEFAA;
+        background-color: #EFEFEF;
         cursor: hand;
     }
 
