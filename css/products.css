@@ -110,12 +110,6 @@
     border-bottom: 10px solid #F00;
 }
 
-#productvideo {
-    float: right;
-    margin: 20px;
-    border-radius: 3px;
-}
-
 #producttext {
     float: left;
 }
@@ -179,8 +173,30 @@
 }
 
 .video {
-    float: center;
     display: inline-block;
+}
+
+#productvideo {
+    background-color: black;
+    float: left;
+    margin: 20px;
+    border-radius: 2px;
+
+}
+
+#imgleft,
+#imgright {
+    height: 300px;
+    margin: 20px 50px;
+
+}
+
+#imgleft {
+    float: left;
+}
+
+#imgright {
+    float: right;
 }
 
 @media only screen and (max-width: 640px) {
