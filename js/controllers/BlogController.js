@@ -18,7 +18,7 @@ app.controller("BlogController", ['$scope', function ($scope) {
                 "",
                 "We are now accepting online orders, so head on over to our <a href='products.html'>Products</a> page to order yours now!",
             ], //a new item adds a page break
-            img: "imgs/blog/firstBatch.png",
+            img: "imgs/blog/firstBatch.jpg",
         },
         {
             title: "Pitch Competition",
