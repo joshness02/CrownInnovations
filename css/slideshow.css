@@ -207,8 +207,8 @@
     }
 
     #productslide {
-        background-position: top, bottom;
-        background-size: 200px;
+        background-position: top right, bottom left;
+        background-size: 50%;
     }
 
     #mainslide {
