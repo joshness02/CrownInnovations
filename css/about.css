@@ -5,7 +5,7 @@
 }
 
 .person {
-    margin: 10px;
+    margin: 30px;
     height: 200px;
     text-align: left;
     display: inline-block;
@@ -37,6 +37,7 @@
     float: none;
     position: relative;
     top: 10px;
+    overflow-x: hidden;
 }
 
 #team {
@@ -108,7 +109,6 @@
         text-align: left;
         column-count: 2;
     }
-
 }
 
 /*
