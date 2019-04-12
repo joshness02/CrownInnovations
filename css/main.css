@@ -302,13 +302,17 @@ html {
 
 
     #products {
-        background-size: 280px;
-        background-position: top center, bottom center;
+        background-size: 50%;
+        background-position: right bottom, left bottom;
     }
 
 
     #aboutdivtext {
         color: #000;
+    }
+
+    .divcontent:not(#slideshow) {
+        height: 300px;
     }
 }
 
