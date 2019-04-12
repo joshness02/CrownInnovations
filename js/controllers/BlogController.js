@@ -4,7 +4,7 @@ app.controller("BlogController", ['$scope', function ($scope) {
             title: "Power Show Expo",
             date: new Date('2019', '00', '30'),
             content: [
-                "Today we went to the <a href='https://iowapowershow.com/' target='_blank'>Iowa Power Farming Show</a> at the Iowa Events Center.",
+                "Having fun at the <a href='https://iowapowershow.com/' target='_blank'>Iowa Power Farming Show</a> at the Iowa Events Center!",
                 "We made some great contacts, and had a great oppurtunity to get our name and product out there!",
             ], //a new item adds a page break
             img: "imgs/blog/powerShow.jpg",

@@ -10,7 +10,7 @@ var products = [
     },
     {
         name: "Stationary Calf Pacifier Wrap Around",
-        img: "imgs/StationaryWrapAroundPicture.png",
+        img: "imgs/StationaryWrapAroundPicture.jpg",
         description: "Can be easily secured anywhere you need it",
         about: "The Stationary Calf Pacifier Wrap Around is designed with adaption in mind, so you can secure it anywhere you need it. Whether you have wire fencing, cattle panels, or wooden fences, the Stationary Calf Pacifier Wrap Around will attach securely, no problem!",
         price: 20,
