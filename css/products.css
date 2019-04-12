@@ -94,6 +94,7 @@
     overflow: hidden;
     padding-bottom: 50px;
     position: relative;
+    border-radius: 10px;
 }
 
 #cover-photo {
@@ -102,6 +103,7 @@
     float: left;
     margin-right: 10px;
     display: block;
+    margin-bottom: 10px;
 }
 
 #product-about {
